@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BtcLabel renders correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      undefined,
+    ]
+  }
+>
+  0.21123456 ₿
+</Text>
+`;

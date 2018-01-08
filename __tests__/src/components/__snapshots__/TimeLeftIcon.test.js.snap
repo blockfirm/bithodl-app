@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimeLeftIcon renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 16,
+          "height": 32,
+          "justifyContent": "center",
+          "width": 32,
+        },
+        Object {
+          "backgroundColor": "#D9E5C3",
+        },
+      ],
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+      }
+    }
+  >
+    <View
+      borderWidth={0}
+      color="#7FA835"
+      progress={1}
+      size={32}
+      thickness={1}
+    />
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Array [
+          Object {
+            "fontSize": 11,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#7FA835",
+          },
+        ],
+        undefined,
+      ]
+    }
+  >
+    ✓
+  </Text>
+</View>
+`;
