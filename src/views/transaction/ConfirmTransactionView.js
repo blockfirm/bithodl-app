@@ -73,6 +73,14 @@ export default class ConfirmTransactionView extends Component {
       })
       .catch((error) => {
         KeepAwake.deactivate();
+
+        if (error.message.indexOf('non-final') > -1) {
+          // https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
+          return dispatch(handleError(
+            new Error('The transaction could not be sent because the funds has not been unlocked yet. This is most likely due to the time on the network being slightly different than the actual time. Please try again later.')
+          ));
+        }
+
         dispatch(handleError(error));
       });
   }
