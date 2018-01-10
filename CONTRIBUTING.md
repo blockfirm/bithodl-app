@@ -8,8 +8,9 @@ read these guidelines and instructions.
 
 ### Install Node.js and npm
 
-Install Node.js and npm by following the instructions on
-[nodejs.org](https://nodejs.org/).
+Install [Node.js](https://nodejs.org) (`v8`) using [nvm](https://github.com/creationix/nvm):
+
+	$ nvm install v8
 
 ### Install Xcode
 
@@ -25,6 +26,7 @@ Download and install Xcode from
 
 	$ npm install
 	$ npm install -g react-native-cli
+	$ react-native link
 
 ## Coding conventions
 
