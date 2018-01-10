@@ -1,6 +1,10 @@
 BitHodl
 =======
 
+[![GitHub Release](https://img.shields.io/github/release/blockfirm/bithodl-app.svg?style=flat-square)](https://github.com/blockfirm/bithodl-app/releases)
+[![Build Status](https://img.shields.io/travis/blockfirm/bithodl-app.svg?branch=master&style=flat-square)](https://travis-ci.org/blockfirm/bithodl-app)
+[![Coverage Status](https://img.shields.io/coveralls/blockfirm/bithodl-app.svg?style=flat-square)](https://coveralls.io/r/blockfirm/bithodl-app)
+
 <https://bithodl.com/>
 
 The Bitcoin wallet for Hodlers. Make sure to hold on to your Bitcoin even
