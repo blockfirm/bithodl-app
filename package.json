@@ -15,6 +15,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest --forceExit",
     "test-coverage": "jest --coverage --forceExit",
+    "coveralls": "npm run test-coverage && cat ./coverage/lcov.info | node_modules/.bin/coveralls",
     "lint": "./node_modules/.bin/eslint --ext .js index.js src/ __tests__/ __mocks__/"
   },
   "dependencies": {
@@ -58,6 +59,7 @@
     "babel-jest": "21.0.2",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-react-native": "4.0.0",
+    "coveralls": "^3.0.0",
     "eslint": "^4.6.1",
     "eslint-plugin-react": "^7.3.0",
     "jest": "21.1.0",
