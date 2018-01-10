@@ -53,7 +53,7 @@ export default class SettingsView extends Component {
 
     Alert.alert(
       'Resync wallet?',
-      'This will resync your wallet with the blockchain and might take a few minutes. Are you sure you want to continue?',
+      'This will resync your wallet with the blockchain and might take a minute. Are you sure you want to continue?',
       [
         { text: 'Cancel', style: 'cancel' },
         { text: 'Resync', onPress: () => dispatch(syncWallet()) }
