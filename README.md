@@ -53,17 +53,17 @@ use testnet coins and don't risk losing any real money.
 
 1. **Configure and run a Bitcore node with testnet**
 
- You need to run a Bitcore node and configure it to use the testnet.
- Follow the instructions in the [BitHodl Service repo](https://github.com/blockfirm/bithodl-service).
+   You need to run a Bitcore node and configure it to use the testnet.
+   Follow the instructions in the [BitHodl Service repo](https://github.com/blockfirm/bithodl-service).
 
 2. **Configure the BitHodl app to use testnet**
 
- Open `src/config.js` and set `network` to `testnet` instead of `mainnet`.
+   Open `src/config.js` and set `network` to `testnet` instead of `mainnet`.
 
 3. **Point the app to your testnet service**
 
- Once you've built and started the app, go to settings and enter the url to your testnet node
- from step 1.
+   Once you've built and started the app, go to settings and enter the url to your testnet node
+   from step 1.
 
 ## Contributing
 
