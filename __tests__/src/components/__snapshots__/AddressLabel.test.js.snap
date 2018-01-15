@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressLabel renders correctly 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F9F9F9",
+        "borderRadius": 3,
+        "flexDirection": "row",
+        "overflow": "hidden",
+        "padding": 8,
+      },
+      undefined,
+    ]
+  }
+  testID={undefined}
+>
+  <View
+    style={
+      Object {
+        "borderRightColor": "#E4E4E4",
+        "borderRightWidth": 1,
+        "marginRight": 7,
+        "paddingLeft": 1,
+        "paddingRight": 7,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      numberOfLines={undefined}
+      style={
+        Array [
+          Object {
+            "color": "#504F63",
+            "fontFamily": "Avenir Next",
+            "fontWeight": "400",
+          },
+          Object {
+            "color": "#7C7C7C",
+          },
+        ]
+      }
+    >
+      ₿
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={undefined}
+    style={
+      Array [
+        Object {
+          "color": "#504F63",
+          "fontFamily": "Avenir Next",
+          "fontWeight": "400",
+        },
+        Object {
+          "color": "#7C7C7C",
+          "fontFamily": "Menlo-Regular",
+          "fontSize": 12,
+          "lineHeight": 13,
+          "padding": 2,
+        },
+      ]
+    }
+  >
+    2N6oSTcdmjmTPEQ1sLTBye8HCvbM2fyL2HM
+  </Text>
+  <View
+    collapsable={undefined}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F9F9F9",
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      numberOfLines={undefined}
+      style={
+        Array [
+          Object {
+            "color": "#504F63",
+            "fontFamily": "Avenir Next",
+            "fontWeight": "400",
+          },
+          Object {
+            "color": "#7C7C7C",
+            "fontSize": 11,
+            "fontWeight": "600",
+          },
+        ]
+      }
+    >
+      Copied
+    </Text>
+  </View>
+</View>
+`;
