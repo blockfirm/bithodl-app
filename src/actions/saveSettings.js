@@ -6,6 +6,8 @@ export const SAVE_SETTINGS_REQUEST = 'SAVE_SETTINGS_REQUEST';
 export const SAVE_SETTINGS_SUCCESS = 'SAVE_SETTINGS_SUCCESS';
 export const SAVE_SETTINGS_FAILURE = 'SAVE_SETTINGS_FAILURE';
 
+const SETTINGS_KEY = 'settings';
+
 const saveSettingsRequest = () => {
   return {
     type: SAVE_SETTINGS_REQUEST
@@ -33,7 +35,7 @@ export const saveSettings = (newSettings) => {
 
     try {
       // Get saved settings.
-      const savedSettings = Settings.get('settings') || {};
+      const savedSettings = Settings.get(SETTINGS_KEY) || {};
 
       // Merge saved settings with new settings.
       settings = deepmerge(savedSettings, newSettings);
