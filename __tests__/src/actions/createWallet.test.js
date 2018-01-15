@@ -95,7 +95,7 @@ describe('createWallet', () => {
         returnedFunction = createWallet(fakePhrase);
       });
 
-      it('dispathes an action of type CREATE_WALLET_REQUEST', () => {
+      it('dispatches an action of type CREATE_WALLET_REQUEST', () => {
         returnedFunction(dispatchMock);
 
         expect(dispatchMock).toHaveBeenCalledWith({
@@ -115,7 +115,7 @@ describe('createWallet', () => {
           promise = returnedFunction(dispatchMock);
         });
 
-        it('dispathes an action of type CREATE_WALLET_SUCCESS with metadata about the wallet', () => {
+        it('dispatches an action of type CREATE_WALLET_SUCCESS with metadata about the wallet', () => {
           expect.hasAssertions();
 
           return promise.then((wallet) => {
@@ -253,7 +253,7 @@ describe('createWallet', () => {
           });
         });
 
-        it('dispathes an action of type CREATE_WALLET_FAILURE with the error', () => {
+        it('dispatches an action of type CREATE_WALLET_FAILURE with the error', () => {
           expect.hasAssertions();
 
           return promise.catch((error) => {

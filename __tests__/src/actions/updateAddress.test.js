@@ -49,7 +49,7 @@ describe('updateAddress', () => {
       returnedFunction = updateAddress(fakeAddress);
     });
 
-    it('dispathes an action of type UPDATE_ADDRESS_REQUEST', () => {
+    it('dispatches an action of type UPDATE_ADDRESS_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -69,7 +69,7 @@ describe('updateAddress', () => {
         promise = returnedFunction(dispatchMock);
       });
 
-      it('dispathes an action of type UPDATE_ADDRESS_SUCCESS with the address', () => {
+      it('dispatches an action of type UPDATE_ADDRESS_SUCCESS with the address', () => {
         expect.hasAssertions();
 
         return promise.then((address) => {
@@ -107,7 +107,7 @@ describe('updateAddress', () => {
       });
     });
 
-    it('dispathes an action of type UPDATE_ADDRESS_FAILURE with the error', () => {
+    it('dispatches an action of type UPDATE_ADDRESS_FAILURE with the error', () => {
       expect.hasAssertions();
 
       return promise.catch((error) => {
@@ -138,7 +138,7 @@ describe('updateAddress', () => {
       });
     });
 
-    it('dispathes an action of type UPDATE_ADDRESS_FAILURE with the error', () => {
+    it('dispatches an action of type UPDATE_ADDRESS_FAILURE with the error', () => {
       expect.hasAssertions();
 
       return promise.catch((error) => {

@@ -69,7 +69,7 @@ describe('writeAddresses', () => {
       returnedFunction = writeAddresses();
     });
 
-    it('dispathes an action of type WRITE_ADDRESSES_REQUEST', () => {
+    it('dispatches an action of type WRITE_ADDRESSES_REQUEST', () => {
       returnedFunction(dispatchMock, getStateMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -114,7 +114,7 @@ describe('writeAddresses', () => {
         });
       });
 
-      it('dispathes an action of type WRITE_ADDRESSES_SUCCESS', () => {
+      it('dispatches an action of type WRITE_ADDRESSES_SUCCESS', () => {
         expect.hasAssertions();
 
         return promise.then(() => {
@@ -146,7 +146,7 @@ describe('writeAddresses', () => {
         });
       });
 
-      it('dispathes an action of type WRITE_ADDRESSES_FAILURE with the error', () => {
+      it('dispatches an action of type WRITE_ADDRESSES_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

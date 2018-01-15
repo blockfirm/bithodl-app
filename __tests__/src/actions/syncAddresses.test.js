@@ -85,7 +85,7 @@ describe('syncAddresses', () => {
       returnedFunction = syncAddresses();
     });
 
-    it('dispathes an action of type SYNC_ADDRESSES_REQUEST', () => {
+    it('dispatches an action of type SYNC_ADDRESSES_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -144,7 +144,7 @@ describe('syncAddresses', () => {
         });
       });
 
-      it('dispathes an action of type SYNC_ADDRESSES_SUCCESS', () => {
+      it('dispatches an action of type SYNC_ADDRESSES_SUCCESS', () => {
         expect.hasAssertions();
 
         return promise.then(() => {
@@ -176,7 +176,7 @@ describe('syncAddresses', () => {
         });
       });
 
-      it('dispathes an action of type SYNC_ADDRESSES_FAILURE with the error', () => {
+      it('dispatches an action of type SYNC_ADDRESSES_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

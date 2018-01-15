@@ -55,7 +55,7 @@ describe('readAddresses', () => {
       returnedFunction = readAddresses();
     });
 
-    it('dispathes an action of type READ_ADDRESSES_REQUEST', () => {
+    it('dispatches an action of type READ_ADDRESSES_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -84,7 +84,7 @@ describe('readAddresses', () => {
         promise = returnedFunction(dispatchMock);
       });
 
-      it('dispathes an action of type READ_ADDRESSES_SUCCESS with the addresses', () => {
+      it('dispatches an action of type READ_ADDRESSES_SUCCESS with the addresses', () => {
         expect.hasAssertions();
 
         return promise.then((addresses) => {
@@ -149,7 +149,7 @@ describe('readAddresses', () => {
         });
       });
 
-      it('dispathes an action of type READ_ADDRESSES_FAILURE with the error', () => {
+      it('dispatches an action of type READ_ADDRESSES_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

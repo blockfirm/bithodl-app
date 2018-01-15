@@ -58,7 +58,7 @@ describe('estimateFee', () => {
       returnedFunction = estimateFee();
     });
 
-    it('dispathes an action of type ESTIMATE_FEE_REQUEST', () => {
+    it('dispatches an action of type ESTIMATE_FEE_REQUEST', () => {
       returnedFunction(dispatchMock, getStateMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -91,7 +91,7 @@ describe('estimateFee', () => {
         promise = returnedFunction(dispatchMock, getStateMock);
       });
 
-      it('dispathes an action of type ESTIMATE_FEE_SUCCESS with the estimated fee', () => {
+      it('dispatches an action of type ESTIMATE_FEE_SUCCESS with the estimated fee', () => {
         expect.hasAssertions();
 
         return promise.then(() => {
@@ -124,7 +124,7 @@ describe('estimateFee', () => {
         });
       });
 
-      it('dispathes an action of type ESTIMATE_FEE_FAILURE with the error', () => {
+      it('dispatches an action of type ESTIMATE_FEE_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

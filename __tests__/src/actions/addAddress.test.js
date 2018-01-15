@@ -42,7 +42,7 @@ describe('addAddress', () => {
       returnedFunction = addAddress(fakeAddress);
     });
 
-    it('dispathes an action of type ADD_ADDRESS_REQUEST', () => {
+    it('dispatches an action of type ADD_ADDRESS_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -50,7 +50,7 @@ describe('addAddress', () => {
       });
     });
 
-    it('dispathes an action of type ADD_ADDRESS_SUCCESS with the address', () => {
+    it('dispatches an action of type ADD_ADDRESS_SUCCESS with the address', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({

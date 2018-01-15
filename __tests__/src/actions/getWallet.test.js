@@ -55,7 +55,7 @@ describe('getWallet', () => {
       returnedFunction = getWallet();
     });
 
-    it('dispathes an action of type GET_WALLET_REQUEST', () => {
+    it('dispatches an action of type GET_WALLET_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -84,7 +84,7 @@ describe('getWallet', () => {
         promise = returnedFunction(dispatchMock);
       });
 
-      it('dispathes an action of type GET_WALLET_SUCCESS with metadata about the wallet', () => {
+      it('dispatches an action of type GET_WALLET_SUCCESS with metadata about the wallet', () => {
         expect.hasAssertions();
 
         return promise.then((metadata) => {
@@ -149,7 +149,7 @@ describe('getWallet', () => {
         });
       });
 
-      it('dispathes an action of type DELETE_WALLET_FAILURE with the error', () => {
+      it('dispatches an action of type DELETE_WALLET_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

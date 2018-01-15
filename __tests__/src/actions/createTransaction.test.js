@@ -78,7 +78,7 @@ describe('createTransaction', () => {
       returnedFunction = createTransaction(fakeFromAddress, fakeToAddressHash);
     });
 
-    it('dispathes an action of type CREATE_TRANSACTION_REQUEST', () => {
+    it('dispatches an action of type CREATE_TRANSACTION_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -98,7 +98,7 @@ describe('createTransaction', () => {
         promise = returnedFunction(dispatchMock);
       });
 
-      it('dispathes an action of type CREATE_TRANSACTION_SUCCESS with the transaction', () => {
+      it('dispatches an action of type CREATE_TRANSACTION_SUCCESS with the transaction', () => {
         expect.hasAssertions();
 
         return promise.then((transaction) => {
@@ -169,7 +169,7 @@ describe('createTransaction', () => {
         });
       });
 
-      it('dispathes an action of type CREATE_TRANSACTION_FAILURE with the error', () => {
+      it('dispatches an action of type CREATE_TRANSACTION_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

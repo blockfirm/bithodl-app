@@ -49,7 +49,7 @@ describe('deleteAddress', () => {
       returnedFunction = deleteAddress(fakeAddress);
     });
 
-    it('dispathes an action of type DELETE_ADDRESS_REQUEST', () => {
+    it('dispatches an action of type DELETE_ADDRESS_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -69,7 +69,7 @@ describe('deleteAddress', () => {
         promise = returnedFunction(dispatchMock);
       });
 
-      it('dispathes an action of type DELETE_ADDRESS_SUCCESS with the address', () => {
+      it('dispatches an action of type DELETE_ADDRESS_SUCCESS with the address', () => {
         expect.hasAssertions();
 
         return promise.then((address) => {
@@ -107,7 +107,7 @@ describe('deleteAddress', () => {
       });
     });
 
-    it('dispathes an action of type DELETE_ADDRESS_FAILURE with the error', () => {
+    it('dispatches an action of type DELETE_ADDRESS_FAILURE with the error', () => {
       expect.hasAssertions();
 
       return promise.catch((error) => {
@@ -138,7 +138,7 @@ describe('deleteAddress', () => {
       });
     });
 
-    it('dispathes an action of type DELETE_ADDRESS_FAILURE with the error', () => {
+    it('dispatches an action of type DELETE_ADDRESS_FAILURE with the error', () => {
       expect.hasAssertions();
 
       return promise.catch((error) => {

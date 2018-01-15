@@ -48,7 +48,7 @@ describe('loadSettings', () => {
       returnedFunction = loadSettings();
     });
 
-    it('dispathes an action of type LOAD_SETTINGS_REQUEST', () => {
+    it('dispatches an action of type LOAD_SETTINGS_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -63,7 +63,7 @@ describe('loadSettings', () => {
       expect(Settings.get).toHaveBeenCalledWith(SETTINGS_KEY);
     });
 
-    it('dispathes an action of type LOAD_SETTINGS_SUCCESS with the settings', () => {
+    it('dispatches an action of type LOAD_SETTINGS_SUCCESS with the settings', () => {
       const expectedSettings = config;
 
       returnedFunction(dispatchMock);
@@ -129,7 +129,7 @@ describe('loadSettings', () => {
         expect(dispatchAction).toThrowError('9a75627c-865b-4faf-811b-b598a78c392d');
       });
 
-      it('dispathes an action of type LOAD_SETTINGS_FAILURE with the error', () => {
+      it('dispatches an action of type LOAD_SETTINGS_FAILURE with the error', () => {
         expect.hasAssertions();
 
         try {

@@ -101,7 +101,7 @@ describe('createAddress', () => {
       returnedFunction = createAddress(fakeUnlockDate);
     });
 
-    it('dispathes an action of type CREATE_ADDRESS_REQUEST', () => {
+    it('dispatches an action of type CREATE_ADDRESS_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -121,7 +121,7 @@ describe('createAddress', () => {
         promise = returnedFunction(dispatchMock);
       });
 
-      it('dispathes an action of type CREATE_ADDRESS_SUCCESS with the new address', () => {
+      it('dispatches an action of type CREATE_ADDRESS_SUCCESS with the new address', () => {
         expect.hasAssertions();
 
         return promise.then((address) => {
@@ -211,7 +211,7 @@ describe('createAddress', () => {
         });
       });
 
-      it('dispathes an action of type CREATE_ADDRESS_FAILURE with the error', () => {
+      it('dispatches an action of type CREATE_ADDRESS_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

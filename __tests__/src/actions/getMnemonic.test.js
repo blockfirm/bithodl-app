@@ -48,7 +48,7 @@ describe('getMnemonic', () => {
       returnedFunction = getMnemonic();
     });
 
-    it('dispathes an action of type GET_MNEMONIC_REQUEST', () => {
+    it('dispatches an action of type GET_MNEMONIC_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -77,7 +77,7 @@ describe('getMnemonic', () => {
         promise = returnedFunction(dispatchMock);
       });
 
-      it('dispathes an action of type GET_MNEMONIC_SUCCESS', () => {
+      it('dispatches an action of type GET_MNEMONIC_SUCCESS', () => {
         expect.hasAssertions();
 
         return promise.then(() => {
@@ -119,7 +119,7 @@ describe('getMnemonic', () => {
         });
       });
 
-      it('dispathes an action of type GET_MNEMONIC_FAILURE with the error', () => {
+      it('dispatches an action of type GET_MNEMONIC_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

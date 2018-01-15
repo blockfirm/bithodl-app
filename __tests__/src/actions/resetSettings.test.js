@@ -52,7 +52,7 @@ describe('resetSettings', () => {
       returnedFunction = resetSettings();
     });
 
-    it('dispathes an action of type RESET_SETTINGS_REQUEST', () => {
+    it('dispatches an action of type RESET_SETTINGS_REQUEST', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -72,7 +72,7 @@ describe('resetSettings', () => {
       expect(loadSettings).toHaveBeenCalledTimes(1);
     });
 
-    it('dispathes an action of type RESET_SETTINGS_SUCCESS', () => {
+    it('dispatches an action of type RESET_SETTINGS_SUCCESS', () => {
       returnedFunction(dispatchMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -96,7 +96,7 @@ describe('resetSettings', () => {
         expect(dispatchAction).toThrowError('416782bb-53b3-49f8-a902-0fca3053ee3b');
       });
 
-      it('dispathes an action of type RESET_SETTINGS_FAILURE with the error', () => {
+      it('dispatches an action of type RESET_SETTINGS_FAILURE with the error', () => {
         expect.hasAssertions();
 
         try {

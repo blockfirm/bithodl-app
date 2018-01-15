@@ -64,7 +64,7 @@ describe('sendTransaction', () => {
       returnedFunction = sendTransaction(fakeTransaction);
     });
 
-    it('dispathes an action of type SEND_TRANSACTION_REQUEST', () => {
+    it('dispatches an action of type SEND_TRANSACTION_REQUEST', () => {
       returnedFunction(dispatchMock, getStateMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -97,7 +97,7 @@ describe('sendTransaction', () => {
         promise = returnedFunction(dispatchMock, getStateMock);
       });
 
-      it('dispathes an action of type SEND_TRANSACTION_SUCCESS with the transaction', () => {
+      it('dispatches an action of type SEND_TRANSACTION_SUCCESS with the transaction', () => {
         expect.hasAssertions();
 
         return promise.then(() => {
@@ -130,7 +130,7 @@ describe('sendTransaction', () => {
         });
       });
 
-      it('dispathes an action of type SEND_TRANSACTION_FAILURE with the error', () => {
+      it('dispatches an action of type SEND_TRANSACTION_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {

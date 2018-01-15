@@ -100,7 +100,7 @@ describe('syncWallet', () => {
       returnedFunction = syncWallet();
     });
 
-    it('dispathes an action of type SYNC_WALLET_REQUEST', () => {
+    it('dispatches an action of type SYNC_WALLET_REQUEST', () => {
       returnedFunction(dispatchMock, getStateMock);
 
       expect(dispatchMock).toHaveBeenCalledWith({
@@ -194,7 +194,7 @@ describe('syncWallet', () => {
         });
       });
 
-      it('dispathes an action of type SYNC_WALLET_SUCCESS', () => {
+      it('dispatches an action of type SYNC_WALLET_SUCCESS', () => {
         expect.hasAssertions();
 
         return promise.then(() => {
@@ -238,7 +238,7 @@ describe('syncWallet', () => {
         });
       });
 
-      it('dispathes an action of type SYNC_WALLET_FAILURE with the error', () => {
+      it('dispatches an action of type SYNC_WALLET_FAILURE with the error', () => {
         expect.hasAssertions();
 
         return promise.catch((error) => {
