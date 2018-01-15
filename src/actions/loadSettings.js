@@ -6,6 +6,8 @@ export const LOAD_SETTINGS_REQUEST = 'LOAD_SETTINGS_REQUEST';
 export const LOAD_SETTINGS_SUCCESS = 'LOAD_SETTINGS_SUCCESS';
 export const LOAD_SETTINGS_FAILURE = 'LOAD_SETTINGS_FAILURE';
 
+const SETTINGS_KEY = 'settings';
+
 const loadSettingsRequest = () => {
   return {
     type: LOAD_SETTINGS_REQUEST
@@ -34,7 +36,7 @@ export const loadSettings = () => {
 
     try {
       // Get saved settings.
-      const savedSettings = Settings.get('settings') || {};
+      const savedSettings = Settings.get(SETTINGS_KEY) || {};
 
       // Merge saved settings with defaults from config.
       settings = deepmerge(config, savedSettings);

@@ -1,6 +1,6 @@
 jest.mock('WebView', () => 'WebView');
 
 jest.mock('Settings', () => ({
-  get: () => ({}),
-  set: () => {}
+  get: jest.fn(() => ({})),
+  set: jest.fn(() => {})
 }));
