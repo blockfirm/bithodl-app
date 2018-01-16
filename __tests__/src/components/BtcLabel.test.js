@@ -4,32 +4,33 @@ import renderer from 'react-test-renderer';
 import BtcLabel from '../../../src/components/BtcLabel';
 
 describe('BtcLabel', () => {
-  it('renders correctly', () => {
-    const tree = renderer.create(
-      <BtcLabel amount={21123456} />
-    ).toJSON();
+  describe('when unit is not set', () => {
+    it('renders amount as BTC', () => {
+      const tree = renderer.create(
+        <BtcLabel amount={21123456} />
+      ).toJSON();
 
-    expect(tree).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
+    });
   });
 
-  describe('#_formatBtc(satoshis)', () => {
-    let btcLabel;
+  describe('when unit is set to "BTC"', () => {
+    it('renders amount as BTC', () => {
+      const tree = renderer.create(
+        <BtcLabel amount={21123456} unit='BTC' />
+      ).toJSON();
 
-    beforeEach(() => {
-      btcLabel = new BtcLabel();
+      expect(tree).toMatchSnapshot();
     });
+  });
 
-    it('accepts one argument', () => {
-      const length = btcLabel._formatBtc.length;
-      expect(length).toBe(1);
-    });
+  describe('when unit is set to "mBTC"', () => {
+    it('renders amount as mBTC', () => {
+      const tree = renderer.create(
+        <BtcLabel amount={21123456} unit='mBTC' />
+      ).toJSON();
 
-    it('returns the amount as BTC followed by "₿"', () => {
-      const satoshis = 21123456;
-      const returnValue = btcLabel._formatBtc(satoshis);
-
-      expect(typeof returnValue).toBe('string');
-      expect(returnValue).toBe('0.21123456 ₿');
+      expect(tree).toMatchSnapshot();
     });
   });
 });
