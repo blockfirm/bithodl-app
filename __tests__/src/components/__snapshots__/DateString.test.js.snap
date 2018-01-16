@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateString renders the date correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      Array [
+        Object {
+          "fontWeight": "600",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  29 Nov, 2017 20:59
+</Text>
+`;
