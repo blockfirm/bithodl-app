@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<View
+  pointerEvents={undefined}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#ffffff",
+        "bottom": 30,
+        "left": 40,
+        "position": "absolute",
+        "right": 40,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
