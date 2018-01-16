@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly with showBackButton set to false 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "height": 42,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+/>
+`;
+
+exports[`Header renders correctly with showBackButton set to true 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "height": 42,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "left": 10,
+        "opacity": 1,
+        "position": "absolute",
+        "top": 30,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 12,
+          },
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#D49146",
+              "fontSize": 32,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            },
+            undefined,
+          ],
+          Object {
+            "fontFamily": "Ionicons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Header when an address is not specified renders correctly with hideAddress set to false 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "height": 42,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+/>
+`;
+
+exports[`Header when an address is not specified renders correctly with hideAddress set to true 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "height": 42,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+/>
+`;
+
+exports[`Header when an address is specified renders correctly with hideAddress set to false 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "height": 42,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgba(255, 255, 255, 0.5)",
+          "borderRadius": 40,
+          "flexDirection": "row",
+          "padding": 5,
+          "paddingBottom": 4,
+          "paddingTop": 4,
+          "position": "absolute",
+          "right": 20,
+          "top": 33,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderRadius": 16,
+              "height": 32,
+              "justifyContent": "center",
+              "width": 32,
+            },
+            Object {
+              "backgroundColor": "#D9E5C3",
+            },
+          ],
+          Object {
+            "borderRadius": 8,
+            "height": 16,
+            "marginRight": 8,
+            "width": 16,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "left": 0,
+            "position": "absolute",
+            "top": 0,
+          }
+        }
+      >
+        <View
+          borderWidth={0}
+          color="#7FA835"
+          progress={1}
+          size={16}
+          thickness={0.5}
+        />
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Array [
+              Object {
+                "fontSize": 11,
+                "fontWeight": "bold",
+              },
+              Object {
+                "color": "#7FA835",
+              },
+            ],
+            Object {
+              "backgroundColor": "transparent",
+              "fontSize": 7,
+            },
+          ]
+        }
+      >
+        ✓
+      </Text>
+    </View>
+    <BtcLabelContainer
+      amount={2000000}
+      style={
+        Object {
+          "color": "#504F63",
+          "fontSize": 12,
+          "fontWeight": "600",
+          "marginRight": 3,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Header when an address is specified renders correctly with hideAddress set to true 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "height": 42,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+/>
+`;

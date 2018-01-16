@@ -39,7 +39,7 @@ export default class Header extends Component {
 Header.propTypes = {
   address: PropTypes.object,
   showBackButton: PropTypes.bool,
-  onBackPress: PropTypes.func.isRequired,
+  onBackPress: PropTypes.func,
   backButtonIconStyle: PropTypes.any,
   hideAddress: PropTypes.bool
 };
