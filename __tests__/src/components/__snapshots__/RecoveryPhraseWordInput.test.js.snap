@@ -1,0 +1,306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecoveryPhraseWordInput renders correct words correctly 1`] = `
+<View
+  style={
+    Object {
+      "padding": 4,
+      "width": "50%",
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderRadius": 27,
+            "borderWidth": 1,
+            "padding": 17,
+            "paddingBottom": 3,
+            "paddingTop": 7,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.05,
+            "shadowRadius": 8,
+          },
+          Object {
+            "borderColor": "#33CF8B",
+          },
+        ]
+      }
+    >
+      <TextInput
+        autoCapitalize="none"
+        autoCorrect={false}
+        enablesReturnKeyAutomatically={true}
+        keyboardType={undefined}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        onSubmitEditing={undefined}
+        placeholder={undefined}
+        placeholderTextColor="#DDDDDF"
+        returnKeyType="next"
+        selectionColor="#FFCA8B"
+        style={
+          Array [
+            Object {
+              "color": "#504E64",
+              "fontFamily": "Avenir Next",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "height": 27,
+              "letterSpacing": 1.45,
+              "width": 278,
+            },
+            Array [
+              Object {
+                "fontFamily": "Menlo-Regular",
+                "letterSpacing": 1,
+                "padding": 0,
+                "paddingLeft": 20,
+                "width": "100%",
+              },
+              Object {
+                "color": "#33CF8B",
+              },
+            ],
+          ]
+        }
+        value={undefined}
+      />
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#DDDDDF",
+            "fontFamily": "Menlo-Regular",
+            "fontSize": 13,
+            "left": 13,
+            "position": "absolute",
+            "top": 12.5,
+          },
+          Object {
+            "color": "#33CF8B",
+          },
+        ]
+      }
+    >
+      3
+      .
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`RecoveryPhraseWordInput renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "padding": 4,
+      "width": "50%",
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderRadius": 27,
+            "borderWidth": 1,
+            "padding": 17,
+            "paddingBottom": 3,
+            "paddingTop": 7,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.05,
+            "shadowRadius": 8,
+          },
+          Object {
+            "borderColor": "#DDDDDF",
+          },
+        ]
+      }
+    >
+      <TextInput
+        autoCapitalize="none"
+        autoCorrect={false}
+        enablesReturnKeyAutomatically={true}
+        keyboardType={undefined}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        onSubmitEditing={undefined}
+        placeholder={undefined}
+        placeholderTextColor="#DDDDDF"
+        returnKeyType="next"
+        selectionColor="#FFCA8B"
+        style={
+          Array [
+            Object {
+              "color": "#504E64",
+              "fontFamily": "Avenir Next",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "height": 27,
+              "letterSpacing": 1.45,
+              "width": 278,
+            },
+            Array [
+              Object {
+                "fontFamily": "Menlo-Regular",
+                "letterSpacing": 1,
+                "padding": 0,
+                "paddingLeft": 20,
+                "width": "100%",
+              },
+              Object {},
+            ],
+          ]
+        }
+        value={undefined}
+      />
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#DDDDDF",
+            "fontFamily": "Menlo-Regular",
+            "fontSize": 13,
+            "left": 13,
+            "position": "absolute",
+            "top": 12.5,
+          },
+          Object {},
+        ]
+      }
+    >
+      2
+      .
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`RecoveryPhraseWordInput renders incorrect words correctly 1`] = `
+<View
+  style={
+    Object {
+      "padding": 4,
+      "width": "50%",
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderRadius": 27,
+            "borderWidth": 1,
+            "padding": 17,
+            "paddingBottom": 3,
+            "paddingTop": 7,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.05,
+            "shadowRadius": 8,
+          },
+          Object {
+            "borderColor": "#FF5A59",
+          },
+        ]
+      }
+    >
+      <TextInput
+        autoCapitalize="none"
+        autoCorrect={false}
+        enablesReturnKeyAutomatically={true}
+        keyboardType={undefined}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        onSubmitEditing={undefined}
+        placeholder={undefined}
+        placeholderTextColor="#DDDDDF"
+        returnKeyType="next"
+        selectionColor="#FFCA8B"
+        style={
+          Array [
+            Object {
+              "color": "#504E64",
+              "fontFamily": "Avenir Next",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "height": 27,
+              "letterSpacing": 1.45,
+              "width": 278,
+            },
+            Array [
+              Object {
+                "fontFamily": "Menlo-Regular",
+                "letterSpacing": 1,
+                "padding": 0,
+                "paddingLeft": 20,
+                "width": "100%",
+              },
+              Object {
+                "color": "#FF5A59",
+              },
+            ],
+          ]
+        }
+        value={undefined}
+      />
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#DDDDDF",
+            "fontFamily": "Menlo-Regular",
+            "fontSize": 13,
+            "left": 13,
+            "position": "absolute",
+            "top": 12.5,
+          },
+          Object {
+            "color": "#FF5A59",
+          },
+        ]
+      }
+    >
+      4
+      .
+    </Text>
+  </View>
+</View>
+`;
