@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RowText renders correctly when the item is locked 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      Object {
+        "color": "#8F8E94",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "lineHeight": 18,
+      },
+    ]
+  }
+>
+  Until
+   
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={undefined}
+    style={
+      Array [
+        Object {
+          "color": "#504F63",
+          "fontFamily": "Avenir Next",
+          "fontWeight": "400",
+        },
+        Array [
+          Object {
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "#8F8E94",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 18,
+          },
+        ],
+      ]
+    }
+  >
+    28 Feb, 2023 11:08
+  </Text>
+</Text>
+`;
+
+exports[`RowText renders correctly when the item is unlocked 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      Object {
+        "color": "#8F8E94",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "lineHeight": 18,
+      },
+    ]
+  }
+>
+  Ended
+   
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={undefined}
+    style={
+      Array [
+        Object {
+          "color": "#504F63",
+          "fontFamily": "Avenir Next",
+          "fontWeight": "400",
+        },
+        Array [
+          Object {
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "#8F8E94",
+            "fontSize": 13,
+            "fontWeight": "400",
+            "lineHeight": 18,
+          },
+        ],
+      ]
+    }
+  >
+    20 Dec, 2016 01:00
+  </Text>
+</Text>
+`;
