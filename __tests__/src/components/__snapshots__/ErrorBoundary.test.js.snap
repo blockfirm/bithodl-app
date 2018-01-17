@@ -5,6 +5,14 @@ exports[`ErrorBoundary renders correctly 1`] = `
   dispatch={[Function]}
   style={undefined}
 >
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+  >
+    83fd03d9-f631-4662-9432-934df7799582
+  </Text>
   <ErrorModalContainer />
 </View>
 `;

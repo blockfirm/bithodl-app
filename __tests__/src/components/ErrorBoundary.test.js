@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from 'react-native';
 import renderer from 'react-test-renderer';
 
 import { HANDLE_ERROR } from '../../../src/actions';
@@ -11,7 +12,9 @@ jest.mock('../../../src/containers/ErrorModalContainer', () => 'ErrorModalContai
 describe('ErrorBoundary', () => {
   it('renders correctly', () => {
     const tree = renderer.create(
-      <ErrorBoundary dispatch={dispatchMock} />
+      <ErrorBoundary dispatch={dispatchMock}>
+        <Text>83fd03d9-f631-4662-9432-934df7799582</Text>
+      </ErrorBoundary>
     ).toJSON();
 
     expect(tree).toMatchSnapshot();
