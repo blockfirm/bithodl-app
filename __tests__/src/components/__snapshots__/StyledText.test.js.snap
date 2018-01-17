@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledText renders correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={1}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+  >
+    56d8ab7b-d089-46e7-aefc-526768cd08a6
+  </Text>
+</Text>
+`;
