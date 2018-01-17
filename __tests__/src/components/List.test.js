@@ -3,78 +3,64 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import List from '../../../src/components/List';
 
+jest.mock('../../../src/containers/BtcLabelContainer', () => 'BtcLabelContainer');
+
 describe('List', () => {
-  it('renders correctly', () => {
+  let onShowItem;
+  let fakeItems;
+
+  beforeEach(() => {
+    onShowItem = jest.fn();
+
+    fakeItems = {
+      'ee1259fd-934e-484f-a391-ac52978486ec': {
+        id: 'ee1259fd-934e-484f-a391-ac52978486ec',
+        hash: '1JNHNJftiWu57UVpp2cjrNNHCeLwbNy3Zt',
+        script: 'OP_RETURN',
+        amount: 2000000,
+        createdAt: 1471651200,
+        unlockAt: 1482192000
+      },
+      '83e81610-270e-4c0f-80e3-e12b4093c8be': {
+        id: '83e81610-270e-4c0f-80e3-e12b4093c8be',
+        hash: '1JNHNJftiWu57UVpp2cjrNNHCeLwbNy3Zt',
+        script: 'OP_RETURN',
+        amount: 1000000,
+        createdAt: 1471351200,
+        unlockAt: 1482152000
+      },
+      'e09a888f-3c21-40d4-aa70-55943dec9457': {
+        id: 'e09a888f-3c21-40d4-aa70-55943dec9457',
+        hash: '1JNHNJftiWu57UVpp2cjrNNHCeLwbNy3Zt',
+        script: 'OP_RETURN',
+        amount: 3000000,
+        createdAt: 1471371221,
+        unlockAt: 1482352139
+      },
+      '60243061-8a91-44ab-b6e1-683e8ee086dc': {
+        id: '60243061-8a91-44ab-b6e1-683e8ee086dc',
+        hash: '1JNHNJftiWu57UVpp2cjrNNHCeLwbNy3Zt',
+        script: 'OP_RETURN',
+        amount: 4000000,
+        createdAt: 1471371221,
+        unlockAt: 1482352139
+      }
+    };
+  });
+
+  it('renders correctly with items', () => {
     const tree = renderer.create(
-      <List />
+      <List items={fakeItems} onShowItem={onShowItem} />
     ).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  describe('#_renderRows()', () => {
-    var onShowItem;
-    var list;
-    var items;
-    var returnValue;
+  it('renders correctly without items', () => {
+    const tree = renderer.create(
+      <List />
+    ).toJSON();
 
-    beforeEach(() => {
-      onShowItem = jest.fn();
-
-      list = new List();
-      list.props = { onShowItem };
-
-      items = [
-        { id: '40fd1773-2582-4587-b105-de91534dac5f' },
-        { id: '25c69897-0f0c-460f-b640-fb74e8f5f1cd' },
-        { id: 'ab5c2461-f04a-4f33-a643-4dd271deacb5' }
-      ];
-
-      returnValue = list._renderRows(items);
-    });
-
-    it('accepts one argument', () => {
-      const length = list._renderRows.length;
-      expect(length).toBe(1);
-    });
-
-    it('returns an array', () => {
-      const returnValue = list._renderRows(items);
-      expect(Array.isArray(returnValue)).toBe(true);
-    });
-
-    describe('the returned array', () => {
-      it('has the length of "items"', () => {
-        expect(returnValue.length).toBe(items.length);
-      });
-
-      describe('each item in the array', () => {
-        it('is of type "Row"', () => {
-          returnValue.forEach((row) => {
-            expect(typeof row).toBe('object');
-            expect(typeof row.type).toBe('function');
-            expect(row.type.name).toBe('Row');
-          });
-        });
-
-        it('has key assigned to the id of the item', () => {
-          returnValue.forEach((row, index) => {
-            expect(row.key).toBe(items[index].id);
-          });
-        });
-
-        it('has property "item" assigned to the item', () => {
-          returnValue.forEach((row, index) => {
-            expect(row.props.item).toBe(items[index]);
-          });
-        });
-
-        it('has property "onShowItem" assigned to props.onShowItem', () => {
-          returnValue.forEach((row) => {
-            expect(row.props.onShowItem).toBe(onShowItem);
-          });
-        });
-      });
-    });
+    expect(tree).toMatchSnapshot();
   });
 });

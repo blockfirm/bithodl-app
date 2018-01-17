@@ -1,6 +1,934 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List renders correctly 1`] = `
+exports[`List renders correctly with items 1`] = `
+<RCTScrollView
+  showsVerticalScrollIndicator={false}
+  style={undefined}
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "#FEFCFB",
+          "borderRadius": 6,
+          "marginBottom": 10,
+          "marginTop": 213,
+          "minHeight": 426,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 0,
+            "width": 0,
+          },
+          "shadowOpacity": 0.25,
+          "shadowRadius": 4,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Array [
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "white",
+                "borderBottomColor": "#F9F8F8",
+                "borderBottomWidth": 1,
+                "padding": 16,
+                "paddingLeft": 64,
+              },
+              Object {
+                "borderTopLeftRadius": 6,
+                "borderTopRightRadius": 6,
+              },
+            ],
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderRadius": 16,
+                    "height": 32,
+                    "justifyContent": "center",
+                    "width": 32,
+                  },
+                  Object {
+                    "backgroundColor": "#D9E5C3",
+                  },
+                ],
+                Object {
+                  "left": -48,
+                  "position": "absolute",
+                  "top": 3,
+                  "zIndex": 100,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "left": 0,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              <View
+                borderWidth={0}
+                color="#7FA835"
+                progress={1}
+                size={32}
+                thickness={1}
+              />
+            </View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Array [
+                    Object {
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                    },
+                    Object {
+                      "color": "#7FA835",
+                    },
+                  ],
+                  undefined,
+                ]
+              }
+            >
+              ✓
+            </Text>
+          </View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            numberOfLines={undefined}
+            style={
+              Array [
+                Object {
+                  "color": "#504F63",
+                  "fontFamily": "Avenir Next",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#504F63",
+                  "fontSize": 15,
+                  "fontWeight": "600",
+                  "lineHeight": 20,
+                },
+              ]
+            }
+          >
+            Hodled for 4 months
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            numberOfLines={undefined}
+            style={
+              Array [
+                Object {
+                  "color": "#504F63",
+                  "fontFamily": "Avenir Next",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#8F8E94",
+                  "fontSize": 13,
+                  "fontWeight": "400",
+                  "lineHeight": 18,
+                },
+              ]
+            }
+          >
+            Ended
+             
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              numberOfLines={undefined}
+              style={
+                Array [
+                  Object {
+                    "color": "#504F63",
+                    "fontFamily": "Avenir Next",
+                    "fontWeight": "400",
+                  },
+                  Array [
+                    Object {
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "color": "#8F8E94",
+                      "fontSize": 13,
+                      "fontWeight": "400",
+                      "lineHeight": 18,
+                    },
+                  ],
+                ]
+              }
+            >
+              19 Dec, 2016 13:53
+            </Text>
+          </Text>
+          <BtcLabelContainer
+            amount={1000000}
+            style={
+              Object {
+                "color": "#504F63",
+                "fontSize": 13,
+                "fontWeight": "600",
+                "position": "absolute",
+                "right": 20,
+                "top": 11,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "#EBEBEB",
+                  "fontSize": 22,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 8,
+                },
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Array [
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "white",
+                "borderBottomColor": "#F9F8F8",
+                "borderBottomWidth": 1,
+                "padding": 16,
+                "paddingLeft": 64,
+              },
+              undefined,
+            ],
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderRadius": 16,
+                    "height": 32,
+                    "justifyContent": "center",
+                    "width": 32,
+                  },
+                  Object {
+                    "backgroundColor": "#D9E5C3",
+                  },
+                ],
+                Object {
+                  "left": -48,
+                  "position": "absolute",
+                  "top": 3,
+                  "zIndex": 100,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "left": 0,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              <View
+                borderWidth={0}
+                color="#7FA835"
+                progress={1}
+                size={32}
+                thickness={1}
+              />
+            </View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Array [
+                    Object {
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                    },
+                    Object {
+                      "color": "#7FA835",
+                    },
+                  ],
+                  undefined,
+                ]
+              }
+            >
+              ✓
+            </Text>
+          </View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            numberOfLines={undefined}
+            style={
+              Array [
+                Object {
+                  "color": "#504F63",
+                  "fontFamily": "Avenir Next",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#504F63",
+                  "fontSize": 15,
+                  "fontWeight": "600",
+                  "lineHeight": 20,
+                },
+              ]
+            }
+          >
+            Hodled for 4 months
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            numberOfLines={undefined}
+            style={
+              Array [
+                Object {
+                  "color": "#504F63",
+                  "fontFamily": "Avenir Next",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#8F8E94",
+                  "fontSize": 13,
+                  "fontWeight": "400",
+                  "lineHeight": 18,
+                },
+              ]
+            }
+          >
+            Ended
+             
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              numberOfLines={undefined}
+              style={
+                Array [
+                  Object {
+                    "color": "#504F63",
+                    "fontFamily": "Avenir Next",
+                    "fontWeight": "400",
+                  },
+                  Array [
+                    Object {
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "color": "#8F8E94",
+                      "fontSize": 13,
+                      "fontWeight": "400",
+                      "lineHeight": 18,
+                    },
+                  ],
+                ]
+              }
+            >
+              20 Dec, 2016 01:00
+            </Text>
+          </Text>
+          <BtcLabelContainer
+            amount={2000000}
+            style={
+              Object {
+                "color": "#504F63",
+                "fontSize": 13,
+                "fontWeight": "600",
+                "position": "absolute",
+                "right": 20,
+                "top": 11,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "#EBEBEB",
+                  "fontSize": 22,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 8,
+                },
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Array [
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "white",
+                "borderBottomColor": "#F9F8F8",
+                "borderBottomWidth": 1,
+                "padding": 16,
+                "paddingLeft": 64,
+              },
+              undefined,
+            ],
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderRadius": 16,
+                    "height": 32,
+                    "justifyContent": "center",
+                    "width": 32,
+                  },
+                  Object {
+                    "backgroundColor": "#D9E5C3",
+                  },
+                ],
+                Object {
+                  "left": -48,
+                  "position": "absolute",
+                  "top": 3,
+                  "zIndex": 100,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "left": 0,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              <View
+                borderWidth={0}
+                color="#7FA835"
+                progress={1}
+                size={32}
+                thickness={1}
+              />
+            </View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Array [
+                    Object {
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                    },
+                    Object {
+                      "color": "#7FA835",
+                    },
+                  ],
+                  undefined,
+                ]
+              }
+            >
+              ✓
+            </Text>
+          </View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            numberOfLines={undefined}
+            style={
+              Array [
+                Object {
+                  "color": "#504F63",
+                  "fontFamily": "Avenir Next",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#504F63",
+                  "fontSize": 15,
+                  "fontWeight": "600",
+                  "lineHeight": 20,
+                },
+              ]
+            }
+          >
+            Hodled for 4 months
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            numberOfLines={undefined}
+            style={
+              Array [
+                Object {
+                  "color": "#504F63",
+                  "fontFamily": "Avenir Next",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#8F8E94",
+                  "fontSize": 13,
+                  "fontWeight": "400",
+                  "lineHeight": 18,
+                },
+              ]
+            }
+          >
+            Ended
+             
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              numberOfLines={undefined}
+              style={
+                Array [
+                  Object {
+                    "color": "#504F63",
+                    "fontFamily": "Avenir Next",
+                    "fontWeight": "400",
+                  },
+                  Array [
+                    Object {
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "color": "#8F8E94",
+                      "fontSize": 13,
+                      "fontWeight": "400",
+                      "lineHeight": 18,
+                    },
+                  ],
+                ]
+              }
+            >
+              21 Dec, 2016 21:28
+            </Text>
+          </Text>
+          <BtcLabelContainer
+            amount={3000000}
+            style={
+              Object {
+                "color": "#504F63",
+                "fontSize": 13,
+                "fontWeight": "600",
+                "position": "absolute",
+                "right": 20,
+                "top": 11,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "#EBEBEB",
+                  "fontSize": 22,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 8,
+                },
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Array [
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "white",
+                "borderBottomColor": "#F9F8F8",
+                "borderBottomWidth": 1,
+                "padding": 16,
+                "paddingLeft": 64,
+              },
+              Object {
+                "borderBottomLeftRadius": 6,
+                "borderBottomRightRadius": 6,
+              },
+            ],
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View>
+          <View
+            style={
+              Array [
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "borderRadius": 16,
+                    "height": 32,
+                    "justifyContent": "center",
+                    "width": 32,
+                  },
+                  Object {
+                    "backgroundColor": "#D9E5C3",
+                  },
+                ],
+                Object {
+                  "left": -48,
+                  "position": "absolute",
+                  "top": 3,
+                  "zIndex": 100,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "left": 0,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              <View
+                borderWidth={0}
+                color="#7FA835"
+                progress={1}
+                size={32}
+                thickness={1}
+              />
+            </View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Array [
+                    Object {
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                    },
+                    Object {
+                      "color": "#7FA835",
+                    },
+                  ],
+                  undefined,
+                ]
+              }
+            >
+              ✓
+            </Text>
+          </View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            numberOfLines={undefined}
+            style={
+              Array [
+                Object {
+                  "color": "#504F63",
+                  "fontFamily": "Avenir Next",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#504F63",
+                  "fontSize": 15,
+                  "fontWeight": "600",
+                  "lineHeight": 20,
+                },
+              ]
+            }
+          >
+            Hodled for 4 months
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            numberOfLines={undefined}
+            style={
+              Array [
+                Object {
+                  "color": "#504F63",
+                  "fontFamily": "Avenir Next",
+                  "fontWeight": "400",
+                },
+                Object {
+                  "color": "#8F8E94",
+                  "fontSize": 13,
+                  "fontWeight": "400",
+                  "lineHeight": 18,
+                },
+              ]
+            }
+          >
+            Ended
+             
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={false}
+              ellipsizeMode="tail"
+              numberOfLines={undefined}
+              style={
+                Array [
+                  Object {
+                    "color": "#504F63",
+                    "fontFamily": "Avenir Next",
+                    "fontWeight": "400",
+                  },
+                  Array [
+                    Object {
+                      "fontWeight": "600",
+                    },
+                    Object {
+                      "color": "#8F8E94",
+                      "fontSize": 13,
+                      "fontWeight": "400",
+                      "lineHeight": 18,
+                    },
+                  ],
+                ]
+              }
+            >
+              21 Dec, 2016 21:28
+            </Text>
+          </Text>
+          <BtcLabelContainer
+            amount={4000000}
+            style={
+              Object {
+                "color": "#504F63",
+                "fontSize": 13,
+                "fontWeight": "600",
+                "position": "absolute",
+                "right": 20,
+                "top": 11,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "#EBEBEB",
+                  "fontSize": 22,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 8,
+                },
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`List renders correctly without items 1`] = `
 <RCTScrollView
   showsVerticalScrollIndicator={false}
   style={undefined}
