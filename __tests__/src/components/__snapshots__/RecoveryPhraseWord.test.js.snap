@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecoveryPhraseWord renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "padding": 4,
+      "width": "49%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fbfbfb",
+        "borderColor": "#DDDDDF",
+        "borderRadius": 30,
+        "borderWidth": 1,
+        "padding": 7,
+        "paddingLeft": 12,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      numberOfLines={undefined}
+      style={
+        Array [
+          Object {
+            "color": "#504F63",
+            "fontFamily": "Avenir Next",
+            "fontWeight": "400",
+          },
+          Object {
+            "fontFamily": "Menlo-Regular",
+            "fontSize": 11,
+          },
+        ]
+      }
+    >
+      11
+      . 
+      bulb
+    </Text>
+  </View>
+</View>
+`;
