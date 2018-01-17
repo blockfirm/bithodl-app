@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stats renders correctly with items 1`] = `
+<View
+  style={undefined}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={undefined}
+    style={
+      Array [
+        Object {
+          "color": "#504F63",
+          "fontFamily": "Avenir Next",
+          "fontWeight": "400",
+        },
+        Object {
+          "color": "#D49146",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1,
+        },
+      ]
+    }
+  >
+    HODLING
+  </Text>
+  <BtcLabelContainer
+    amount={10000000}
+    style={
+      Object {
+        "color": "#504F63",
+        "fontSize": 34,
+        "letterSpacing": -0.82,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Stats renders correctly without items 1`] = `
+<View
+  style={undefined}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={undefined}
+    style={
+      Array [
+        Object {
+          "color": "#504F63",
+          "fontFamily": "Avenir Next",
+          "fontWeight": "400",
+        },
+        Object {
+          "color": "#D49146",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 1,
+        },
+      ]
+    }
+  >
+    HODLING
+  </Text>
+  <BtcLabelContainer
+    amount={0}
+    style={
+      Object {
+        "color": "#504F63",
+        "fontSize": 34,
+        "letterSpacing": -0.82,
+      }
+    }
+  />
+</View>
+`;
