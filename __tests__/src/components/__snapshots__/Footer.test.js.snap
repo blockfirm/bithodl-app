@@ -16,5 +16,14 @@ exports[`Footer renders correctly 1`] = `
       undefined,
     ]
   }
-/>
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+  >
+    0750eb7b-6bc0-4142-82e2-035068d50726
+  </Text>
+</View>
 `;
