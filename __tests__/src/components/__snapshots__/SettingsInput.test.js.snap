@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingsInput renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "paddingBottom": 12,
+      "paddingLeft": 15,
+      "paddingRight": 15,
+      "paddingTop": 12,
+    }
+  }
+>
+  <TextInput
+    autoFocus={true}
+    clearButtonMode="always"
+    onChangeText={undefined}
+    onSubmitEditing={undefined}
+    placeholder="9fdbf6ec-9aaa-4acb-943e-3f1102ca6a09"
+    placeholderTextColor="#DDDDDF"
+    returnKeyType="done"
+    selectionColor="#FFCA8B"
+    style={
+      Object {
+        "color": "#504E64",
+        "fontFamily": "Avenir Next",
+        "fontSize": 13,
+        "fontWeight": "600",
+        "letterSpacing": 1.45,
+      }
+    }
+    value="6da60d0a-a030-4486-8b69-2c14c9acf6e6"
+  />
+</View>
+`;
