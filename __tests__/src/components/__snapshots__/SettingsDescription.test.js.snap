@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingsDescription renders correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      Object {
+        "color": "#6D6D72",
+        "fontSize": 13,
+        "lineHeight": 17,
+        "marginBottom": 30,
+        "marginTop": -20,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+  >
+    698350fe-6f2f-487c-adad-a9f5a7f27b59
+  </Text>
+</Text>
+`;
