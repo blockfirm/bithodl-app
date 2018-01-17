@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HourPicker renders correctly 1`] = `
+<View>
+  <Picker
+    onValueChange={undefined}
+    selectedValue={undefined}
+    style={
+      Object {
+        "width": 100,
+      }
+    }
+  >
+    <Item
+      label="00:00"
+      value="0"
+    />
+    <Item
+      label="01:00"
+      value="1"
+    />
+    <Item
+      label="02:00"
+      value="2"
+    />
+    <Item
+      label="03:00"
+      value="3"
+    />
+    <Item
+      label="04:00"
+      value="4"
+    />
+    <Item
+      label="05:00"
+      value="5"
+    />
+    <Item
+      label="06:00"
+      value="6"
+    />
+    <Item
+      label="07:00"
+      value="7"
+    />
+    <Item
+      label="08:00"
+      value="8"
+    />
+    <Item
+      label="09:00"
+      value="9"
+    />
+    <Item
+      label="10:00"
+      value="10"
+    />
+    <Item
+      label="11:00"
+      value="11"
+    />
+    <Item
+      label="12:00"
+      value="12"
+    />
+    <Item
+      label="13:00"
+      value="13"
+    />
+    <Item
+      label="14:00"
+      value="14"
+    />
+    <Item
+      label="15:00"
+      value="15"
+    />
+    <Item
+      label="16:00"
+      value="16"
+    />
+    <Item
+      label="17:00"
+      value="17"
+    />
+    <Item
+      label="18:00"
+      value="18"
+    />
+    <Item
+      label="19:00"
+      value="19"
+    />
+    <Item
+      label="20:00"
+      value="20"
+    />
+    <Item
+      label="21:00"
+      value="21"
+    />
+    <Item
+      label="22:00"
+      value="22"
+    />
+    <Item
+      label="23:00"
+      value="23"
+    />
+  </Picker>
+  <View
+    pointerEvents="none"
+    style={
+      Object {
+        "borderBottomWidth": 0.5,
+        "borderColor": "#CDCDCD",
+        "borderTopWidth": 0.5,
+        "height": 35,
+        "position": "absolute",
+        "top": 90.5,
+        "width": 100,
+      }
+    }
+  />
+</View>
+`;
