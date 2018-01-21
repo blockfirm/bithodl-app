@@ -7,8 +7,10 @@ export default class TimeLeftTitle extends Component {
   _processTimeLeftTitle(title) {
     let processedTitle = title;
 
-    processedTitle = processedTitle.replace('a ', '1 ');
-    processedTitle = processedTitle.replace('an ', '1 ');
+    if (processedTitle.indexOf('a few') === -1) {
+      processedTitle = processedTitle.replace('a ', '1 ');
+      processedTitle = processedTitle.replace('an ', '1 ');
+    }
 
     return processedTitle;
   }
@@ -21,7 +23,10 @@ export default class TimeLeftTitle extends Component {
 
   _getTimeLeftTitle(endDate) {
     let timeLeft = endDate.fromNow(true);
+
     timeLeft = this._processTimeLeftTitle(timeLeft);
+    timeLeft = timeLeft.replace(/^a/, 'A');
+
     return `${timeLeft} left`;
   }
 
