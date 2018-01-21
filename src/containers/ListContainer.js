@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation';
 import moment from 'moment-timezone';
 
-import { readAddresses, writeAddresses, deleteAddress, navigateWithReset } from '../actions';
+import { readAddresses, writeAddresses, deleteAddress } from '../actions';
 import List from '../components/List';
 
 const ACTION_TRANSFER = 0;
