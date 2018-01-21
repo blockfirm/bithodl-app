@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimeLeftTitle renders correctly when there are a few seconds left 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      undefined,
+    ]
+  }
+>
+  A few seconds left
+</Text>
+`;
+
+exports[`TimeLeftTitle renders correctly when there are days left 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      undefined,
+    ]
+  }
+>
+  13 days left
+</Text>
+`;
+
+exports[`TimeLeftTitle renders correctly when there are months left 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      undefined,
+    ]
+  }
+>
+  3 months left
+</Text>
+`;
+
+exports[`TimeLeftTitle renders correctly when there are years left 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      undefined,
+    ]
+  }
+>
+  5 years left
+</Text>
+`;
+
+exports[`TimeLeftTitle renders correctly when there is no time left 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  disabled={false}
+  ellipsizeMode="tail"
+  numberOfLines={undefined}
+  style={
+    Array [
+      Object {
+        "color": "#504F63",
+        "fontFamily": "Avenir Next",
+        "fontWeight": "400",
+      },
+      undefined,
+    ]
+  }
+>
+  Hodled for 4 months
+</Text>
+`;
