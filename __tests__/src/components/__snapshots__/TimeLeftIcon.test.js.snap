@@ -1,6 +1,192 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimeLeftIcon renders correctly 1`] = `
+exports[`TimeLeftIcon renders correctly when there are days left 1`] = `
+<View
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 16,
+          "height": 32,
+          "justifyContent": "center",
+          "width": 32,
+        },
+        Object {
+          "backgroundColor": "#F6EEC0",
+        },
+      ],
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+      }
+    }
+  >
+    <View
+      borderWidth={0}
+      color="#D2B828"
+      progress={0.23529411764705882}
+      size={32}
+      thickness={1}
+    />
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Array [
+          Object {
+            "fontSize": 11,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#D2B828",
+          },
+        ],
+        undefined,
+      ]
+    }
+  >
+    17D
+  </Text>
+</View>
+`;
+
+exports[`TimeLeftIcon renders correctly when there are months left 1`] = `
+<View
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 16,
+          "height": 32,
+          "justifyContent": "center",
+          "width": 32,
+        },
+        Object {
+          "backgroundColor": "#FFCB8B",
+        },
+      ],
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+      }
+    }
+  >
+    <View
+      borderWidth={0}
+      color="#D59247"
+      progress={0.04228774756564023}
+      size={32}
+      thickness={1}
+    />
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Array [
+          Object {
+            "fontSize": 11,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#D59247",
+          },
+        ],
+        undefined,
+      ]
+    }
+  >
+    3M
+  </Text>
+</View>
+`;
+
+exports[`TimeLeftIcon renders correctly when there are years left 1`] = `
+<View
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 16,
+          "height": 32,
+          "justifyContent": "center",
+          "width": 32,
+        },
+        Object {
+          "backgroundColor": "#E2D7E6",
+        },
+      ],
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+      }
+    }
+  >
+    <View
+      borderWidth={0}
+      color="#9D78AB"
+      progress={0.1958664914077619}
+      size={32}
+      thickness={1}
+    />
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Array [
+          Object {
+            "fontSize": 11,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#9D78AB",
+          },
+        ],
+        undefined,
+      ]
+    }
+  >
+    7Y
+  </Text>
+</View>
+`;
+
+exports[`TimeLeftIcon renders correctly when there is no time left 1`] = `
 <View
   style={
     Array [
