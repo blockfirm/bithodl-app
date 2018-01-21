@@ -928,31 +928,4 @@ exports[`List renders correctly with items 1`] = `
 </RCTScrollView>
 `;
 
-exports[`List renders correctly without items 1`] = `
-<RCTScrollView
-  showsVerticalScrollIndicator={false}
-  style={undefined}
->
-  <View>
-    <View
-      style={
-        Object {
-          "alignSelf": "stretch",
-          "backgroundColor": "#FEFCFB",
-          "borderRadius": 6,
-          "marginBottom": 10,
-          "marginTop": 213,
-          "minHeight": 426,
-          "shadowColor": "#000000",
-          "shadowOffset": Object {
-            "height": 0,
-            "width": 0,
-          },
-          "shadowOpacity": 0.25,
-          "shadowRadius": 4,
-        }
-      }
-    />
-  </View>
-</RCTScrollView>
-`;
+exports[`List renders correctly without items 1`] = `null`;

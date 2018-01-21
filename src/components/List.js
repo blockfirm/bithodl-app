@@ -73,6 +73,10 @@ export default class List extends Component {
   render() {
     const items = this._getItems();
 
+    if (!items.length) {
+      return null;
+    }
+
     return (
       <ScrollView showsVerticalScrollIndicator={false} style={this.props.style}>
         <View style={styles.list}>
