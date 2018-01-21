@@ -14,12 +14,7 @@ exports[`DateString renders the date correctly 1`] = `
         "fontFamily": "Avenir Next",
         "fontWeight": "400",
       },
-      Array [
-        Object {
-          "fontWeight": "600",
-        },
-        undefined,
-      ],
+      undefined,
     ]
   }
 >

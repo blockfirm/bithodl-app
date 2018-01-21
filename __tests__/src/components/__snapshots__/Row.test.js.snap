@@ -164,17 +164,12 @@ exports[`Row renders correctly 1`] = `
               "fontFamily": "Avenir Next",
               "fontWeight": "400",
             },
-            Array [
-              Object {
-                "fontWeight": "600",
-              },
-              Object {
-                "color": "#8F8E94",
-                "fontSize": 13,
-                "fontWeight": "400",
-                "lineHeight": 18,
-              },
-            ],
+            Object {
+              "color": "#8F8E94",
+              "fontSize": 13,
+              "fontWeight": "400",
+              "lineHeight": 18,
+            },
           ]
         }
       >
