@@ -5,11 +5,10 @@ BitHodl
 [![Build Status](https://img.shields.io/travis/blockfirm/bithodl-app.svg?branch=master&style=flat-square)](https://travis-ci.org/blockfirm/bithodl-app)
 [![Coverage Status](https://img.shields.io/coveralls/blockfirm/bithodl-app.svg?style=flat-square)](https://coveralls.io/r/blockfirm/bithodl-app)
 
-<https://bithodl.com/>
-
-The Bitcoin wallet for Hodlers. Make sure to hold on to your Bitcoin even
-through the most volatile roller coasters. BitHodl locks your BTC using
-pay-to-script hashes, making them impossible to spend before a specified date.
+The bitcoin wallet for hodlers. Make sure to hold on to your bitcoins even
+through the most volatile roller coasters. [BitHodl](https://bithodl.com/)
+locks your BTC using pay-to-script hashes, making them impossible to spend
+before a specified date.
 
 ## Getting Started
 
