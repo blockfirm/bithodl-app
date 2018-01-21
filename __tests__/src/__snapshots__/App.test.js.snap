@@ -170,7 +170,12 @@ exports[`App renders correctly 1`] = `
                             "justifyContent": "center",
                             "padding": 40,
                           },
-                          undefined,
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#fec98a",
+                            "flex": 1,
+                            "justifyContent": "center",
+                          },
                         ]
                       }
                     >
@@ -187,14 +192,45 @@ exports[`App renders correctly 1`] = `
                           }
                         }
                       />
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        disabled={false}
-                        ellipsizeMode="tail"
+                      <Image
+                        source={1}
+                        style={
+                          Object {
+                            "height": 95,
+                            "width": 64,
+                          }
+                        }
+                      />
+                      <View
+                        pointerEvents={undefined}
+                        style={
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "backgroundColor": "#ffffff",
+                              "bottom": 30,
+                              "left": 40,
+                              "position": "absolute",
+                              "right": 40,
+                            },
+                            Object {
+                              "backgroundColor": "transparent",
+                            },
+                          ]
+                        }
                       >
-                        Loading...
-                      </Text>
+                        <ActivityIndicator
+                          animating={true}
+                          color="#D59247"
+                          hidesWhenStopped={true}
+                          size="small"
+                          style={
+                            Object {
+                              "height": 42,
+                            }
+                          }
+                        />
+                      </View>
                       <View
                         pointerEvents="none"
                         style={

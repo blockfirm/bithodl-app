@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { StyleSheet, Text, Image, ActivityIndicator } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import { loadSettings, getWallet, syncAddresses, navigateWithReset } from '../actions';
+import Footer from '../components/Footer';
 import BaseView from './BaseView';
+
+const styles = StyleSheet.create({
+  view: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fec98a'
+  },
+  icon: {
+    width: 64,
+    height: 95
+  },
+  footer: {
+    backgroundColor: 'transparent'
+  },
+  loader: {
+    height: 42
+  }
+});
 
 @connect()
 export default class SplashView extends Component {
@@ -36,7 +56,7 @@ export default class SplashView extends Component {
 
   _showHomeView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('Home')); //DEBUG: Home
+    dispatch(navigateWithReset('Home'));
   }
 
   _showWelcomeView() {
@@ -46,8 +66,12 @@ export default class SplashView extends Component {
 
   render() {
     return (
-      <BaseView>
-        <Text>Loading...</Text>
+      <BaseView style={styles.view}>
+        <Image source={require('../img/launch-screen/launch-screen-icon.png')} style={styles.icon} />
+
+        <Footer style={styles.footer}>
+          <ActivityIndicator animating={true} color='#D59247' style={styles.loader} size='small' />
+        </Footer>
       </BaseView>
     );
   }
