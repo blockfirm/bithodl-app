@@ -117,7 +117,7 @@ exports[`List renders correctly with items 1`] = `
                   Array [
                     Object {
                       "fontSize": 11,
-                      "fontWeight": "bold",
+                      "fontWeight": "600",
                     },
                     Object {
                       "color": "#7FA835",
@@ -335,7 +335,7 @@ exports[`List renders correctly with items 1`] = `
                   Array [
                     Object {
                       "fontSize": 11,
-                      "fontWeight": "bold",
+                      "fontWeight": "600",
                     },
                     Object {
                       "color": "#7FA835",
@@ -553,7 +553,7 @@ exports[`List renders correctly with items 1`] = `
                   Array [
                     Object {
                       "fontSize": 11,
-                      "fontWeight": "bold",
+                      "fontWeight": "600",
                     },
                     Object {
                       "color": "#7FA835",
@@ -774,7 +774,7 @@ exports[`List renders correctly with items 1`] = `
                   Array [
                     Object {
                       "fontSize": 11,
-                      "fontWeight": "bold",
+                      "fontWeight": "600",
                     },
                     Object {
                       "color": "#7FA835",

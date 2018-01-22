@@ -8,7 +8,7 @@ const headerStyles = StyleSheet.create({
   },
   title: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: '600',
     fontFamily: 'Avenir Next',
     color: '#504F63'
   }

@@ -90,7 +90,7 @@ exports[`Row renders correctly 1`] = `
             Array [
               Object {
                 "fontSize": 11,
-                "fontWeight": "bold",
+                "fontWeight": "600",
               },
               Object {
                 "color": "#7FA835",

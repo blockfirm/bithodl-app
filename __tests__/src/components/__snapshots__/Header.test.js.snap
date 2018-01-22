@@ -207,7 +207,7 @@ exports[`Header when an address is specified renders correctly with hideAddress 
             Array [
               Object {
                 "fontSize": 11,
-                "fontWeight": "bold",
+                "fontWeight": "600",
               },
               Object {
                 "color": "#7FA835",

@@ -47,7 +47,7 @@ exports[`TimeLeftIcon renders correctly when there are days left 1`] = `
         Array [
           Object {
             "fontSize": 11,
-            "fontWeight": "bold",
+            "fontWeight": "600",
           },
           Object {
             "color": "#D2B828",
@@ -109,7 +109,7 @@ exports[`TimeLeftIcon renders correctly when there are months left 1`] = `
         Array [
           Object {
             "fontSize": 11,
-            "fontWeight": "bold",
+            "fontWeight": "600",
           },
           Object {
             "color": "#D59247",
@@ -171,7 +171,7 @@ exports[`TimeLeftIcon renders correctly when there are years left 1`] = `
         Array [
           Object {
             "fontSize": 11,
-            "fontWeight": "bold",
+            "fontWeight": "600",
           },
           Object {
             "color": "#9D78AB",
@@ -233,7 +233,7 @@ exports[`TimeLeftIcon renders correctly when there is no time left 1`] = `
         Array [
           Object {
             "fontSize": 11,
-            "fontWeight": "bold",
+            "fontWeight": "600",
           },
           Object {
             "color": "#7FA835",

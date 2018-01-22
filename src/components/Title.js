@@ -6,7 +6,7 @@ import StyledText from './StyledText';
 const styles = StyleSheet.create({
   title: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: '600',
     letterSpacing: 1,
     marginBottom: 10,
     textAlign: 'center'
