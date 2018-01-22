@@ -57,7 +57,7 @@ use testnet coins and don't risk losing any real money.
 
 2. **Configure the BitHodl app to use testnet**
 
-   Open `src/config.js` and set `network` to `testnet` instead of `mainnet`.
+   Open `src/config.js` and set `network` to `testnet` instead of `livenet`.
 
 3. **Point the app to your testnet service**
 

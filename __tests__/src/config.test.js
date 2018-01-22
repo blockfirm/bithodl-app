@@ -1,5 +1,7 @@
 import config from '../../src/config';
 
+jest.unmock('../../src/config');
+
 it('exports an object', () => {
   expect(typeof config).toBe('object');
 });
@@ -11,9 +13,9 @@ describe('config', () => {
     });
 
     describe('.network', () => {
-      it('equals "testnet"', () => {
+      it('equals "livenet"', () => {
         expect(typeof config.bitcoin.network).toBe('string');
-        expect(config.bitcoin.network).toBe('testnet');
+        expect(config.bitcoin.network).toBe('livenet');
       });
     });
   });
@@ -24,9 +26,9 @@ describe('config', () => {
     });
 
     describe('.baseUrl', () => {
-      it('equals "http://192.168.1.56:3001/v1"', () => {
+      it('equals "https://api.bithodl.com/v1"', () => {
         expect(typeof config.api.baseUrl).toBe('string');
-        expect(config.api.baseUrl).toBe('http://192.168.1.56:3001/v1');
+        expect(config.api.baseUrl).toBe('https://api.bithodl.com/v1');
       });
     });
   });
