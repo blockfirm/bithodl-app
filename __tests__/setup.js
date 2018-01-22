@@ -20,3 +20,5 @@ jest.mock('Picker', () => {
     }
   };
 });
+
+jest.mock('../src/config');
