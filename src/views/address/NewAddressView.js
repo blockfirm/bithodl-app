@@ -77,12 +77,28 @@ export default class NewAddressView extends Component {
   }
 
   _onCreatePress() {
+    const dispatch = this.props.dispatch;
+    const pastDateError = new Error('The selected date cannot be in the past. Please select a future date.');
+    const tooDistantDateError = new Error(`The selected date cannot be more than ${MAXIMUM_YEARS} years from now. Please select a closer date.`);
+
     return new Promise((resolve) => {
       // Give the date picker some time to finish spinning.
       setTimeout(() => {
         // Update the state with the selected date.
         this._datePicker.getDate((date) => {
           const unlockDate = new Date(date);
+
+          // Check that the date is not in the past.
+          if (unlockDate < this._getMinimumDate()) {
+            dispatch(handleError(pastDateError));
+            return resolve();
+          }
+
+          // Check that the date is not too far in the future.
+          if (unlockDate > this._getMaximumDate()) {
+            dispatch(handleError(tooDistantDateError));
+            return resolve();
+          }
 
           this._addAddress(unlockDate)
             .then(resolve)
@@ -97,7 +113,9 @@ export default class NewAddressView extends Component {
   }
 
   _getMinimumDate() {
-    return new Date();
+    const minimumDate = new Date();
+    minimumDate.setDate(minimumDate.getDate() - 1);
+    return minimumDate;
   }
 
   _getMaximumDate() {
@@ -107,8 +125,6 @@ export default class NewAddressView extends Component {
   }
 
   render() {
-    const maximumDate = this._getMaximumDate();
-
     return (
       <BaseView>
         <Title>
@@ -125,7 +141,6 @@ export default class NewAddressView extends Component {
             ref={(ref) => { this._datePicker = ref; }}
             style={styles.datePicker}
             date={this.state.unlockDate}
-            maximumDate={maximumDate}
             mode='date'
           />
 
