@@ -67,7 +67,7 @@ export default class WelcomeView extends Component {
         </Title>
 
         <Paragraph>
-          Time lock your bitcoins and make sure to hold on to them even through the most volatile roller coasters.
+          Time-lock your bitcoins and make sure to hold on to them even through the most volatile roller coasters.
         </Paragraph>
 
         <Footer>
