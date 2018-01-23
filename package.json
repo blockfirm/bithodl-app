@@ -42,6 +42,7 @@
     "react-native-progress": "^3.4.0",
     "react-native-qrcode": "^0.2.6",
     "react-native-randombytes": "^3.0.0",
+    "react-native-uncontrolled-date-picker-ios": "^1.0.0",
     "react-native-vector-icons": "^4.3.0",
     "react-navigation": "^1.0.0-beta.21",
     "react-navigation-redux-debouncer": "0.0.2",

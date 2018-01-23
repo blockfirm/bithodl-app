@@ -47,6 +47,7 @@
 		6C7457FA64AF47DEA4479794 /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B315FEFE92B1472FA3F221CE /* libRCTCamera.a */; };
 		740C9B9580544BEDB40A1921 /* libKCKeepAwake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9243B70D2414430B648580C /* libKCKeepAwake.a */; };
 		74F8EA83DC6F4289BE4F8A99 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA2A71AAA1AD44EFB5403BAC /* MaterialIcons.ttf */; };
+		830EC40496A84254A9A72CBE /* libRNUncontrolledDatePickerIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F26C0A95BB0842B1BD051F20 /* libRNUncontrolledDatePickerIOS.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8AEB85D763F24146A25A3662 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB97E680FF244EB8649A289 /* libRNVectorIcons.a */; };
 		8CC256B70EED4561AAD0BB4C /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F5962C68EE448829ACDADD1 /* Foundation.ttf */; };
@@ -249,6 +250,13 @@
 			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
 			remoteInfo = "RCTLinking-tvOS";
 		};
+		1CCB7C8B2018BB450022AA66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D23BF4CEF924344B7A06A2C /* RNUncontrolledDatePickerIOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNUncontrolledDatePickerIOS;
+		};
 		1CCD48651F83015F00207ECF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -430,6 +438,7 @@
 		836324BB2BCC4E6C9FBA3978 /* KCKeepAwake.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = KCKeepAwake.xcodeproj; path = "../node_modules/react-native-keep-awake/ios/KCKeepAwake.xcodeproj"; sourceTree = "<group>"; };
 		8B4640E1D3BC493F92AB40A4 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		8F5962C68EE448829ACDADD1 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		9D23BF4CEF924344B7A06A2C /* RNUncontrolledDatePickerIOS.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNUncontrolledDatePickerIOS.xcodeproj; path = "../node_modules/react-native-uncontrolled-date-picker-ios/RNUncontrolledDatePickerIOS.xcodeproj"; sourceTree = "<group>"; };
 		9DB97E680FF244EB8649A289 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		A19114C0A29341DABFB35535 /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
 		A80F3E2D52DE488F879AE01D /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
@@ -442,6 +451,7 @@
 		DCAAECE6384D4EBF97003507 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		E9782C3433A04F9EB6307EE8 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		EA2A71AAA1AD44EFB5403BAC /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		F26C0A95BB0842B1BD051F20 /* libRNUncontrolledDatePickerIOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNUncontrolledDatePickerIOS.a; sourceTree = "<group>"; };
 		F9243B70D2414430B648580C /* libKCKeepAwake.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libKCKeepAwake.a; sourceTree = "<group>"; };
 		F9A2F5406FD641B89309455E /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		FADD7011B7E449EFB028366B /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
@@ -482,6 +492,7 @@
 				F1C5512CD90A47858DDC8087 /* libRNBlur.a in Frameworks */,
 				A01133F8591240F9BA97DE5B /* libBVLinearGradient.a in Frameworks */,
 				740C9B9580544BEDB40A1921 /* libKCKeepAwake.a in Frameworks */,
+				830EC40496A84254A9A72CBE /* libRNUncontrolledDatePickerIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +641,7 @@
 				3B65A6C54E524DC9965F3998 /* libRNBlur.a */,
 				A19114C0A29341DABFB35535 /* libBVLinearGradient.a */,
 				F9243B70D2414430B648580C /* libKCKeepAwake.a */,
+				F26C0A95BB0842B1BD051F20 /* libRNUncontrolledDatePickerIOS.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -725,6 +737,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1CCB7C882018BB450022AA66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CCB7C8C2018BB450022AA66 /* libRNUncontrolledDatePickerIOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		47E1473C67924DD5941DFA73 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,6 +806,7 @@
 				1A8B6375A5024741AB9D9034 /* RNBlur.xcodeproj */,
 				66DA8859988A47F7B6A46FA8 /* BVLinearGradient.xcodeproj */,
 				836324BB2BCC4E6C9FBA3978 /* KCKeepAwake.xcodeproj */,
+				9D23BF4CEF924344B7A06A2C /* RNUncontrolledDatePickerIOS.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1035,6 +1056,10 @@
 					ProjectRef = 7255F85D3B8F4407A9C8F944 /* RNRandomBytes.xcodeproj */;
 				},
 				{
+					ProductGroup = 1CCB7C882018BB450022AA66 /* Products */;
+					ProjectRef = 9D23BF4CEF924344B7A06A2C /* RNUncontrolledDatePickerIOS.xcodeproj */;
+				},
+				{
 					ProductGroup = 1C1099831F830721006657B4 /* Products */;
 					ProjectRef = FADD7011B7E449EFB028366B /* RNVectorIcons.xcodeproj */;
 				},
@@ -1230,6 +1255,13 @@
 			fileType = archive.ar;
 			path = "libRCTLinking-tvOS.a";
 			remoteRef = 1C88611D1FE498C9005EA61F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1CCB7C8C2018BB450022AA66 /* libRNUncontrolledDatePickerIOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNUncontrolledDatePickerIOS.a;
+			remoteRef = 1CCB7C8B2018BB450022AA66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		1CCD48661F83015F00207ECF /* libRCTBlob-tvOS.a */ = {
@@ -1524,12 +1556,14 @@
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-uncontrolled-date-picker-ios",
 				);
 				INFOPLIST_FILE = BitHodlTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1562,12 +1596,14 @@
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-uncontrolled-date-picker-ios",
 				);
 				INFOPLIST_FILE = BitHodlTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1601,6 +1637,7 @@
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-uncontrolled-date-picker-ios",
 				);
 				INFOPLIST_FILE = BitHodl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -1630,6 +1667,7 @@
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-uncontrolled-date-picker-ios",
 				);
 				INFOPLIST_FILE = BitHodl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
@@ -1665,11 +1703,13 @@
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-uncontrolled-date-picker-ios",
 				);
 				INFOPLIST_FILE = "BitHodl-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1711,11 +1751,13 @@
 					"$(SRCROOT)/../node_modules/react-native-blur/ios",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-uncontrolled-date-picker-ios",
 				);
 				INFOPLIST_FILE = "BitHodl-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1758,6 +1800,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.BitHodl-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1782,6 +1825,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

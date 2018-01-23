@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, DatePickerIOS, Dimensions } from 'react-native';
+import { StyleSheet, View, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
+import UncontrolledDatePickerIOS from 'react-native-uncontrolled-date-picker-ios';
 
 import { createAddress, handleError } from '../../actions';
 import getFullHour from '../../utils/getFullHour';
@@ -58,15 +59,15 @@ export default class NewAddressView extends Component {
     navigation.navigate('AddressCreated', { address });
   }
 
-  _addAddress() {
+  _addAddress(unlockDate) {
     const dispatch = this.props.dispatch;
     const unlockHour = Number(this.state.unlockHour);
-    let unlockDate = this.state.unlockDate;
+    let unlockTime = new Date(unlockDate);
 
-    unlockDate.setHours(unlockHour);
-    unlockDate = getFullHour(unlockDate);
+    unlockTime.setHours(unlockHour);
+    unlockTime = getFullHour(unlockTime);
 
-    dispatch(createAddress(unlockDate))
+    return dispatch(createAddress(unlockTime))
       .then((address) => {
         this._showAddressCreatedView(address);
       })
@@ -75,8 +76,20 @@ export default class NewAddressView extends Component {
       });
   }
 
-  _onDateChange(date) {
-    this.setState({ unlockDate: date });
+  _onCreatePress() {
+    return new Promise((resolve) => {
+      // Give the date picker some time to finish spinning.
+      setTimeout(() => {
+        // Update the state with the selected date.
+        this._datePicker.getDate((date) => {
+          const unlockDate = new Date(date);
+
+          this._addAddress(unlockDate)
+            .then(resolve)
+            .catch(resolve);
+        });
+      }, 20);
+    });
   }
 
   _onHourChange(hour) {
@@ -108,12 +121,12 @@ export default class NewAddressView extends Component {
         </Paragraph>
 
         <View style={styles.timePickerView}>
-          <DatePickerIOS
+          <UncontrolledDatePickerIOS
+            ref={(ref) => { this._datePicker = ref; }}
             style={styles.datePicker}
             date={this.state.unlockDate}
             maximumDate={maximumDate}
             mode='date'
-            onDateChange={this._onDateChange.bind(this)}
           />
 
           <HourPicker
@@ -130,7 +143,11 @@ export default class NewAddressView extends Component {
             the time on the network being slightly different than the actual time.
           </Paragraph>
 
-          <LargeButton label='Create' onPress={this._addAddress.bind(this)}></LargeButton>
+          <LargeButton
+            label='Create'
+            loadingLabel='Creating address...'
+            onPress={this._onCreatePress.bind(this)}
+          />
         </Footer>
       </BaseView>
     );
