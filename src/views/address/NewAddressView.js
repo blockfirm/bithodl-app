@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   },
   datePicker: {
     width: windowDimensions.width - 100,
-    marginBottom: 80
+    marginBottom: 81
   },
   warningIcon: {
     color: '#8F8E94',
