@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, DatePickerIOS, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import { createAddress, handleError } from '../../actions';
 import getFullHour from '../../utils/getFullHour';
@@ -24,7 +25,14 @@ const styles = StyleSheet.create({
   },
   datePicker: {
     width: windowDimensions.width - 100,
-    marginBottom: 30
+    marginBottom: 80
+  },
+  warningIcon: {
+    color: '#8F8E94',
+    marginBottom: 10
+  },
+  disclaimer: {
+    fontSize: 10
   }
 });
 
@@ -115,6 +123,13 @@ export default class NewAddressView extends Component {
         </View>
 
         <Footer>
+          <Icon name='ios-warning-outline' style={styles.warningIcon} />
+
+          <Paragraph style={styles.disclaimer}>
+            Please note that the actual unlock time might differ up to around 1 hour due to
+            the time on the network being slightly different than the actual time.
+          </Paragraph>
+
           <LargeButton label='Create' onPress={this._addAddress.bind(this)}></LargeButton>
         </Footer>
       </BaseView>
