@@ -51,7 +51,7 @@ export default class RecoverWalletView extends Component {
 
   _showDisclaimerView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('Disclaimer'));
+    return dispatch(navigateWithReset('Disclaimer'));
   }
 
   _recoverWallet() {
@@ -66,7 +66,7 @@ export default class RecoverWalletView extends Component {
         return dispatch(syncWallet());
       })
       .then(() => {
-        this._showDisclaimerView();
+        return this._showDisclaimerView();
       })
       .catch((error) => {
         KeepAwake.deactivate();

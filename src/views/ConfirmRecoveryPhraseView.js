@@ -46,7 +46,7 @@ export default class ConfirmRecoveryPhraseView extends Component {
 
   _showDisclaimerView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('Disclaimer', { isNewWallet: true }));
+    return dispatch(navigateWithReset('Disclaimer', { isNewWallet: true }));
   }
 
   _onChangePhrase(phrase) {

@@ -40,7 +40,7 @@ export default class AddressFundedView extends Component {
 
   _showHomeView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('Home'));
+    return dispatch(navigateWithReset('Home'));
   }
 
   render() {
@@ -69,7 +69,7 @@ export default class AddressFundedView extends Component {
         </Paragraph>
 
         <Footer>
-          <LargeButton label='Hodl on' onPress={this._showHomeView.bind(this)}></LargeButton>
+          <LargeButton label='Hodl on' onPress={this._showHomeView.bind(this)} />
         </Footer>
       </BaseView>
     );

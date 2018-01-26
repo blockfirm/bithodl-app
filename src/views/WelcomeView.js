@@ -44,7 +44,7 @@ export default class WelcomeView extends Component {
   _createWallet() {
     const dispatch = this.props.dispatch;
 
-    dispatch(createWallet())
+    return dispatch(createWallet())
       .then((wallet) => {
         this._showRecoveryPhraseView(wallet);
       })
@@ -71,7 +71,12 @@ export default class WelcomeView extends Component {
         </Paragraph>
 
         <Footer>
-          <LargeButton label='Create a new wallet' onPress={this._createWallet.bind(this)} style={styles.button} />
+          <LargeButton
+            label='Create a new wallet'
+            loadingLabel='Creating wallet...'
+            onPress={this._createWallet.bind(this)}
+            style={styles.button}
+          />
 
           <Link onPress={this._recoverWallet.bind(this)}>
             Or recover an existing BitHodl wallet

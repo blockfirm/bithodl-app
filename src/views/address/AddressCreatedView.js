@@ -81,7 +81,7 @@ export default class AddressCreatedView extends Component {
 
         return dispatch(writeAddresses()).then(() => {
           ReactNativeHaptic.generate('impact');
-          this._showAddressFundedView();
+          return this._showAddressFundedView();
         });
       })
       .catch(() => {
@@ -95,21 +95,21 @@ export default class AddressCreatedView extends Component {
 
   _showHomeView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('Home'));
+    return dispatch(navigateWithReset('Home'));
   }
 
   _showAddressFundedView() {
     const dispatch = this.props.dispatch;
     const address = this.state.address;
 
-    dispatch(navigateWithReset('AddressFunded', { address }));
+    return dispatch(navigateWithReset('AddressFunded', { address }));
   }
 
   _renderFooter() {
     if (this.state.showLaterButton) {
       return (
         <Footer>
-          <LargeButton label='I will do it later' onPress={this._showHomeView.bind(this)}></LargeButton>
+          <LargeButton label='I will do it later' onPress={this._showHomeView.bind(this)} />
         </Footer>
       );
     }

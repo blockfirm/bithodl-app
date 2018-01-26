@@ -40,12 +40,12 @@ export default class DisclaimerView extends Component {
 
   _showHomeView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('Home'));
+    return dispatch(navigateWithReset('Home'));
   }
 
   _showWalletCreatedView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('WalletCreated'));
+    return dispatch(navigateWithReset('WalletCreated'));
   }
 
   _showTermsAndConditionsModal() {
@@ -98,7 +98,7 @@ export default class DisclaimerView extends Component {
         </View>
 
         <Footer>
-          <LargeButton label='I understand' onPress={this._onUnderstand.bind(this)}></LargeButton>
+          <LargeButton label='I understand' onPress={this._onUnderstand.bind(this)} />
         </Footer>
       </BaseView>
     );

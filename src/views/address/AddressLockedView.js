@@ -72,7 +72,7 @@ export default class AddressLockedView extends Component {
         </Paragraph>
 
         <Footer>
-          <LargeButton label='Hodl on' onPress={this._goBack.bind(this)}></LargeButton>
+          <LargeButton label='Hodl on' onPress={this._goBack.bind(this)} />
         </Footer>
       </BaseView>
     );

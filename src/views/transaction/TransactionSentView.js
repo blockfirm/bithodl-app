@@ -26,7 +26,7 @@ export default class TransactionSentView extends Component {
 
   _showHomeView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('Home'));
+    return dispatch(navigateWithReset('Home'));
   }
 
   render() {
@@ -43,7 +43,7 @@ export default class TransactionSentView extends Component {
         </Paragraph>
 
         <Footer>
-          <LargeButton label='OK' onPress={this._showHomeView.bind(this)}></LargeButton>
+          <LargeButton label='OK' onPress={this._showHomeView.bind(this)} />
         </Footer>
       </BaseView>
     );

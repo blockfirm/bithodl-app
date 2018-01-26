@@ -49,7 +49,7 @@ export default class ConfirmTransactionView extends Component {
 
   _showTransactionSentView() {
     const dispatch = this.props.dispatch;
-    dispatch(navigateWithReset('TransactionSent'));
+    return dispatch(navigateWithReset('TransactionSent'));
   }
 
   _completeTransfer() {
@@ -69,7 +69,7 @@ export default class ConfirmTransactionView extends Component {
       })
       .then(() => {
         ReactNativeHaptic.generate('impact');
-        this._showTransactionSentView();
+        return this._showTransactionSentView();
       })
       .catch((error) => {
         KeepAwake.deactivate();
