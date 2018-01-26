@@ -127,7 +127,7 @@ export default class AddressCreatedView extends Component {
     const unlockDate = moment.unix(address.unlockAt);
 
     return (
-      <BaseView>
+      <BaseView hideHeaderAddress={true}>
         <View style={styles.content}>
           <Title>
             Transfer bitcoins

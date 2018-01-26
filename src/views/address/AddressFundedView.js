@@ -49,7 +49,7 @@ export default class AddressFundedView extends Component {
     const unlockDate = moment.unix(address.unlockAt);
 
     return (
-      <BaseView>
+      <BaseView hideHeaderAddress={true}>
         <TimeLeftIcon
           style={styles.icon}
           textStyle={styles.iconText}
