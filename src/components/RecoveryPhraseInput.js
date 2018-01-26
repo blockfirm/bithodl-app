@@ -53,6 +53,7 @@ export default class RecoveryPhraseInput extends Component {
     const word = this.state.words[index];
     const correctWord = this.state.correctWords[index];
     const wordList = this.props.wordList;
+    const autoTab = correctWord !== undefined;
     let isCorrect = false;
     let isIncorrect = false;
 
@@ -72,6 +73,7 @@ export default class RecoveryPhraseInput extends Component {
         index={index}
         isCorrect={isCorrect}
         isIncorrect={isIncorrect}
+        autoTab={autoTab}
         onChangeText={this._onChangeText.bind(this, index)}
         onSubmitEditing={this._onSubmitEditing.bind(this, index)}
       />

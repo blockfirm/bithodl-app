@@ -33,6 +33,11 @@ export default class RecoveryPhraseWordInput extends Component {
   componentWillReceiveProps(nextProps) {
     if (nextProps.isCorrect && !this.props.isCorrect) {
       ReactNativeHaptic.generate('selection');
+
+      // Automatically focus the next input.
+      if (this.props.autoTab && this.props.onSubmitEditing) {
+        this.props.onSubmitEditing();
+      }
     }
   }
 
@@ -83,6 +88,7 @@ RecoveryPhraseWordInput.propTypes = {
   index: PropTypes.number.isRequired,
   isCorrect: PropTypes.bool,
   isIncorrect: PropTypes.bool,
+  autoTab: PropTypes.bool,
   onChangeText: PropTypes.func.isRequired,
   onSubmitEditing: PropTypes.func
 };
