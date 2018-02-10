@@ -57,11 +57,11 @@ describe('createSpendTransaction(fromAddress, toAddressHash, privateKey, fee)', 
   });
 
   describe('when no fee is specified', () => {
-    it('returns a bitcore Transaction with 30,000 satoshis in fees', () => {
+    it('returns a bitcore Transaction with 0 satoshis in fees', () => {
       const transaction = createSpendTransaction(fromAddress, toAddressHash, privateKey);
 
       expect(transaction instanceof bitcore.Transaction).toBe(true);
-      expect(transaction.getFee()).toBe(30000);
+      expect(transaction.getFee()).toBe(0);
     });
   });
 

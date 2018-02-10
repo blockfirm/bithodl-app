@@ -2,7 +2,7 @@ import bitcore from 'bitcore-lib';
 import config from '../config';
 
 // Default transaction fee in satoshis.
-const DEFAULT_FEE_AMOUNT = 30000;
+const DEFAULT_FEE_AMOUNT = 0;
 
 export default function createSpendTransaction(fromAddress, toAddressHash, privateKey, fee = DEFAULT_FEE_AMOUNT) {
   const redeemScript = new bitcore.Script(fromAddress.script);
