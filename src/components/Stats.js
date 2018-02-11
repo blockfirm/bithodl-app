@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 
 import BtcLabelContainer from '../containers/BtcLabelContainer';
 import StyledText from './StyledText';
+
+const windowDimensions = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   title: {
@@ -14,7 +16,7 @@ const styles = StyleSheet.create({
   },
   btcLabel: {
     color: '#504F63',
-    fontSize: 34,
+    fontSize: windowDimensions.width < 330 ? 30 : 34,
     letterSpacing: -0.82
   }
 });

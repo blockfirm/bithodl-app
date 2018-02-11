@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, ScrollView } from 'react-native';
+import { StyleSheet, ScrollView, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ErrorBoundary from '../../components/ErrorBoundary';
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     backgroundColor: '#EFEFF4'
   },
-  scrollView: {
+  childrenWrapper: {
     paddingTop: 30
   }
 });
@@ -20,8 +20,10 @@ export default class BaseSettingsView extends Component {
   render() {
     return (
       <ErrorBoundary {...this.props} style={styles.view}>
-        <ScrollView style={styles.scrollView}>
-          {this.props.children}
+        <ScrollView>
+          <View style={styles.childrenWrapper}>
+            {this.props.children}
+          </View>
         </ScrollView>
       </ErrorBoundary>
     );

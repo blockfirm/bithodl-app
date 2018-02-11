@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import StyledText from './StyledText';
+
+const windowDimensions = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   paragraph: {
     color: '#8F8E94',
-    fontSize: 16,
-    marginBottom: 20,
+    fontSize: windowDimensions.width < 330 ? 14 : 16,
+    marginBottom: windowDimensions.width < 330 ? 15 : 20,
     textAlign: 'center'
   }
 });

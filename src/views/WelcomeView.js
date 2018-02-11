@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Image } from 'react-native';
+import { StyleSheet, Image, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -11,6 +11,8 @@ import LargeButton from '../components/LargeButton';
 import Link from '../components/Link';
 import BaseView from './BaseView';
 
+const windowDimensions = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   image: {
     width: 200,
@@ -18,7 +20,7 @@ const styles = StyleSheet.create({
     marginBottom: 50
   },
   title: {
-    marginBottom: 20
+    marginBottom: windowDimensions.height < 600 ? 10 : 20
   },
   button: {
     marginBottom: 10

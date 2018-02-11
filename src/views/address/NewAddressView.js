@@ -15,17 +15,18 @@ import Footer from '../../components/Footer';
 import BaseView from '../BaseView';
 
 const windowDimensions = Dimensions.get('window');
+const HOUR_PICKER_WIDTH = windowDimensions.width < 330 ? 70 : 100;
 const MAXIMUM_YEARS = 3;
 
 const styles = StyleSheet.create({
   paragraph: {
-    marginBottom: 40
+    marginBottom: windowDimensions.width < 330 ? 20 : 40
   },
   timePickerView: {
     flexDirection: 'row'
   },
   datePicker: {
-    width: windowDimensions.width - 100,
+    width: windowDimensions.width - HOUR_PICKER_WIDTH,
     marginBottom: 81
   },
   warningIcon: {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { ifIphoneX } from 'react-native-iphone-x-helper';
@@ -11,12 +11,15 @@ import LargeButton from '../components/LargeButton';
 import Footer from '../components/Footer';
 import BaseView from './BaseView';
 
+const windowDimensions = Dimensions.get('window');
+const TITLE_MARGIN_BOTTOM = windowDimensions.height < 600 ? 20 : 30;
+
 const styles = StyleSheet.create({
   title: {
-    marginBottom: ifIphoneX(40, 30)
+    marginBottom: ifIphoneX(40, TITLE_MARGIN_BOTTOM)
   },
   subtitle: {
-    fontSize: 14,
+    fontSize: windowDimensions.height < 600 ? 12 : 14,
     textAlign: 'left'
   },
   terms: {
@@ -24,7 +27,7 @@ const styles = StyleSheet.create({
     marginBottom: ifIphoneX(40, 50)
   },
   paragraph: {
-    fontSize: 14,
+    fontSize: windowDimensions.height < 600 ? 12 : 14,
     textAlign: 'left'
   },
   link: {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TouchableHighlight } from 'react-native';
+import { StyleSheet, View, TouchableHighlight, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -9,6 +9,7 @@ import TimeLeftIcon from './TimeLeftIcon';
 import RowText from './RowText';
 
 const UPDATE_INTERVAL = 60 * 1000; // 1 minute.
+const windowDimensions = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   row: {
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: '600',
-    fontSize: 15,
+    fontSize: windowDimensions.width < 330 ? 13 : 15,
     lineHeight: 20,
     color: '#504F63'
   },
@@ -40,9 +41,9 @@ const styles = StyleSheet.create({
   },
   amount: {
     position: 'absolute',
-    right: 20,
-    top: 11,
-    fontSize: 13,
+    right: windowDimensions.width < 330 ? 17 : 20,
+    top: windowDimensions.width < 330 ? 12 : 11,
+    fontSize: windowDimensions.width < 330 ? 11 : 13,
     fontWeight: '600',
     color: '#504F63'
   }

@@ -29,6 +29,9 @@ exports[`RecoveryPhraseWordInput renders correct words correctly 1`] = `
             "shadowRadius": 8,
           },
           Object {
+            "paddingTop": 7,
+          },
+          Object {
             "borderColor": "#33CF8B",
           },
         ]
@@ -53,7 +56,7 @@ exports[`RecoveryPhraseWordInput renders correct words correctly 1`] = `
               "color": "#504E64",
               "fontFamily": "Avenir Next",
               "fontSize": 13,
-              "fontWeight": "600",
+              "fontWeight": "400",
               "height": 27,
               "letterSpacing": 1.45,
               "width": 278,
@@ -61,6 +64,8 @@ exports[`RecoveryPhraseWordInput renders correct words correctly 1`] = `
             Array [
               Object {
                 "fontFamily": "Menlo-Regular",
+                "fontSize": 13,
+                "height": 27,
                 "letterSpacing": 1,
                 "padding": 0,
                 "paddingLeft": 20,
@@ -132,6 +137,9 @@ exports[`RecoveryPhraseWordInput renders correctly 1`] = `
             "shadowRadius": 8,
           },
           Object {
+            "paddingTop": 7,
+          },
+          Object {
             "borderColor": "#DDDDDF",
           },
         ]
@@ -156,7 +164,7 @@ exports[`RecoveryPhraseWordInput renders correctly 1`] = `
               "color": "#504E64",
               "fontFamily": "Avenir Next",
               "fontSize": 13,
-              "fontWeight": "600",
+              "fontWeight": "400",
               "height": 27,
               "letterSpacing": 1.45,
               "width": 278,
@@ -164,6 +172,8 @@ exports[`RecoveryPhraseWordInput renders correctly 1`] = `
             Array [
               Object {
                 "fontFamily": "Menlo-Regular",
+                "fontSize": 13,
+                "height": 27,
                 "letterSpacing": 1,
                 "padding": 0,
                 "paddingLeft": 20,
@@ -231,6 +241,9 @@ exports[`RecoveryPhraseWordInput renders incorrect words correctly 1`] = `
             "shadowRadius": 8,
           },
           Object {
+            "paddingTop": 7,
+          },
+          Object {
             "borderColor": "#FF5A59",
           },
         ]
@@ -255,7 +268,7 @@ exports[`RecoveryPhraseWordInput renders incorrect words correctly 1`] = `
               "color": "#504E64",
               "fontFamily": "Avenir Next",
               "fontSize": 13,
-              "fontWeight": "600",
+              "fontWeight": "400",
               "height": 27,
               "letterSpacing": 1.45,
               "width": 278,
@@ -263,6 +276,8 @@ exports[`RecoveryPhraseWordInput renders incorrect words correctly 1`] = `
             Array [
               Object {
                 "fontFamily": "Menlo-Regular",
+                "fontSize": 13,
+                "height": 27,
                 "letterSpacing": 1,
                 "padding": 0,
                 "paddingLeft": 20,

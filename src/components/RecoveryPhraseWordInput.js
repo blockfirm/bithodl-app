@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import ReactNativeHaptic from 'react-native-haptic';
 import StyledInput from './StyledInput';
@@ -7,25 +7,32 @@ import StyledInput from './StyledInput';
 const SUCCESS_COLOR = '#33CF8B';
 const FAILURE_COLOR = '#FF5A59';
 
+const windowDimensions = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   container: {
     width: '50%',
-    padding: 4
+    padding: windowDimensions.height < 600 ? 3 : 4
   },
   number: {
     position: 'absolute',
-    top: 12.5,
+    top: windowDimensions.height < 600 ? 11 : 12.5,
     left: 13,
     fontFamily: 'Menlo-Regular',
-    fontSize: 13,
+    fontSize: windowDimensions.height < 600 ? 11 : 13,
     color: '#DDDDDF'
+  },
+  inputContainerStyle: {
+    paddingTop: windowDimensions.height < 600 ? 5 : 7
   },
   input: {
     fontFamily: 'Menlo-Regular',
+    fontSize: windowDimensions.height < 600 ? 11 : 13,
     letterSpacing: 1,
     width: '100%',
+    height: windowDimensions.height < 600 ? 23 : 27,
     padding: 0,
-    paddingLeft: 20
+    paddingLeft: windowDimensions.height < 600 ? 17 : 20
   }
 });
 
@@ -67,6 +74,7 @@ export default class RecoveryPhraseWordInput extends Component {
           <StyledInput
             ref={(ref) => { this._input = ref; }}
             style={[styles.input, colorStyle]}
+            containerStyle={styles.inputContainerStyle}
             autoCapitalize='none'
             returnKeyType={returnKeyType}
             enforceLowercase={true}

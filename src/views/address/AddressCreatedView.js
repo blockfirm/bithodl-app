@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, ActivityIndicator } from 'react-native';
+import { StyleSheet, View, ActivityIndicator, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import KeepAwake from 'react-native-keep-awake';
@@ -19,6 +19,8 @@ import BaseView from '../BaseView';
 const POLL_INTERVAL = 1000; // 1 second.
 const SHOW_LATER_BUTTON_TIMEOUT = 10 * 1000; // 10 seconds.
 
+const windowDimensions = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   content: {
     marginBottom: 20,
@@ -29,7 +31,7 @@ const styles = StyleSheet.create({
   },
   qrCode: {
     padding: 30,
-    marginBottom: 20
+    marginBottom: windowDimensions.height < 600 ? 0 : 20
   },
   loader: {
     height: 42

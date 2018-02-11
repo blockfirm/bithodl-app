@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Image } from 'react-native';
+import { StyleSheet, Image, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -9,11 +9,13 @@ import LargeButton from '../components/LargeButton';
 import Footer from '../components/Footer';
 import BaseView from './BaseView';
 
+const windowDimensions = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   image: {
-    width: 200,
-    height: 135,
-    marginBottom: 40
+    width: windowDimensions.height < 600 ? 100 : 200,
+    height: windowDimensions.height < 600 ? 67.5 : 135,
+    marginBottom: windowDimensions.height < 600 ? 20 : 40
   },
   phrase: {
     marginTop: 10,

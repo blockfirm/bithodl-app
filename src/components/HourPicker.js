@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Picker } from 'react-native';
+import { StyleSheet, View, Picker, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
+
+const windowDimensions = Dimensions.get('window');
+const HOUR_PICKER_WIDTH = windowDimensions.width < 330 ? 70 : 100;
 
 const styles = StyleSheet.create({
   picker: {
-    width: 100
+    width: HOUR_PICKER_WIDTH
   },
   borders: {
     position: 'absolute',
     top: 90.5,
-    width: 100,
+    width: HOUR_PICKER_WIDTH,
     height: 35,
     borderColor: '#CDCDCD',
     borderTopWidth: StyleSheet.hairlineWidth,

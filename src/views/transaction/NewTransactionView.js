@@ -20,7 +20,8 @@ import QrCodeIcon from '../../components/QrCodeIcon';
 import KeyboardIcon from '../../components/KeyboardIcon';
 import BaseView from '../BaseView';
 
-const windowHeight = Dimensions.get('window').height;
+const windowDimensions = Dimensions.get('window');
+const windowHeight = windowDimensions.height;
 const CAMERA_MODE_OFFSET = windowHeight - 130;
 const SLIDE_THRESHOLD = 140;
 
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
   },
   qrCodeIcon: {
     position: 'absolute',
-    top: 150
+    top: windowDimensions.height < 600 ? 130 : 150
   },
   keyboardIcon: {
     position: 'absolute',

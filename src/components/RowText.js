@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import moment from 'moment-timezone';
 
 import StyledText from './StyledText';
 import DateString from './DateString';
 
+const windowDimensions = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   text: {
-    fontSize: 13,
+    fontSize: windowDimensions.width < 330 ? 11 : 13,
     fontWeight: '400',
     lineHeight: 18,
     color: '#8F8E94'

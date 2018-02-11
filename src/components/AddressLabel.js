@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Animated, StyleSheet, View, TouchableWithoutFeedback, Clipboard } from 'react-native';
+import { Animated, StyleSheet, View, TouchableWithoutFeedback, Clipboard, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import ReactNativeHaptic from 'react-native-haptic';
 import StyledText from './StyledText';
+
+const windowDimensions = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
   address: {
     padding: 2,
     fontFamily: 'Menlo-Regular',
-    fontSize: 12,
+    fontSize: windowDimensions.width < 350 ? 10 : 12,
     lineHeight: 13,
     color: '#7C7C7C'
   },

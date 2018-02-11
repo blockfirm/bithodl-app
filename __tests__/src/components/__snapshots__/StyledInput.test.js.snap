@@ -19,6 +19,7 @@ exports[`StyledInput renders correctly 1`] = `
         "shadowOpacity": 0.05,
         "shadowRadius": 8,
       },
+      undefined,
       Object {
         "borderColor": "#DDDDDF",
       },
@@ -44,7 +45,7 @@ exports[`StyledInput renders correctly 1`] = `
           "color": "#504E64",
           "fontFamily": "Avenir Next",
           "fontSize": 13,
-          "fontWeight": "600",
+          "fontWeight": "400",
           "height": 27,
           "letterSpacing": 1.45,
           "width": 278,
@@ -76,6 +77,7 @@ exports[`StyledInput renders correctly with border color 1`] = `
         "shadowOpacity": 0.05,
         "shadowRadius": 8,
       },
+      undefined,
       Object {
         "borderColor": "#33CF8B",
       },
@@ -101,7 +103,7 @@ exports[`StyledInput renders correctly with border color 1`] = `
           "color": "#504E64",
           "fontFamily": "Avenir Next",
           "fontSize": 13,
-          "fontWeight": "600",
+          "fontWeight": "400",
           "height": 27,
           "letterSpacing": 1.45,
           "width": 278,

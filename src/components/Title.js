@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 import StyledText from './StyledText';
 
+const windowDimensions = Dimensions.get('window');
+
 const styles = StyleSheet.create({
   title: {
-    fontSize: 18,
+    fontSize: windowDimensions.width < 330 ? 16 : 18,
     fontWeight: '600',
     letterSpacing: 1,
-    marginBottom: 10,
+    marginBottom: windowDimensions.width < 330 ? 7 : 10,
     textAlign: 'center'
   }
 });

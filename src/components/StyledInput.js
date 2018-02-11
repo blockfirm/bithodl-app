@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput } from 'react-native';
+import { StyleSheet, View, TextInput, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 
 const BORDER_COLOR = '#DDDDDF';
 const BORDER_COLOR_FOCUS = '#FFCA8B';
+
+const windowDimensions = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
@@ -20,11 +22,11 @@ const styles = StyleSheet.create({
   },
   input: {
     fontFamily: 'Avenir Next',
-    fontWeight: '600',
-    fontSize: 13,
+    fontWeight: '400',
+    fontSize: windowDimensions.width < 330 ? 11 : 13,
     letterSpacing: 1.45,
     color: '#504E64',
-    width: 278,
+    width: windowDimensions.width < 330 ? 240 : 278,
     height: 27
   }
 });
@@ -86,7 +88,7 @@ export default class StyledInput extends Component {
     };
 
     return (
-      <View style={[styles.container, borderColor]}>
+      <View style={[styles.container, this.props.containerStyle, borderColor]}>
         <TextInput
           ref={(ref) => { this._input = ref; }}
           style={[styles.input, this.props.style]}
@@ -111,6 +113,7 @@ export default class StyledInput extends Component {
 
 StyledInput.propTypes = {
   style: PropTypes.any,
+  containerStyle: PropTypes.any,
   value: PropTypes.string,
   placeholder: PropTypes.string,
   autoCapitalize: PropTypes.string,
