@@ -122,7 +122,7 @@ export default class ConfirmTransactionView extends Component {
           </View>
 
           <View style={styles.row}>
-            <StyledText style={styles.label}>Miner fees</StyledText>
+            <StyledText style={styles.label}>Transaction fees</StyledText>
             <View style={styles.feeLevelWrapper}>
               <StyledText style={styles.feeLevel}>Level: {settings.bitcoin.fee.level}</StyledText>
             </View>
