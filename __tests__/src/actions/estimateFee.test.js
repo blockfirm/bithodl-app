@@ -5,6 +5,12 @@ const dispatchMock = jest.fn();
 
 const getStateMock = jest.fn(() => ({
   settings: {
+    bitcoin: {
+      fee: {
+        level: 'Normal',
+        satoshisPerByte: 100
+      }
+    },
     api: {
       baseUrl: 'a5d31859-9daa-47e1-84cb-2f45da488102'
     }
@@ -99,6 +105,164 @@ describe('estimateFee', () => {
             type: ESTIMATE_FEE_SUCCESS,
             satoshisPerByte: 123 // The fee is mocked at the top of this file.
           });
+        });
+      });
+    });
+
+    describe('when the fee level is set to "Custom"', () => {
+      let promise;
+
+      beforeEach(() => {
+        getStateMock.mockImplementationOnce(() => ({
+          settings: {
+            bitcoin: {
+              fee: {
+                level: 'Custom',
+                satoshisPerByte: 14
+              }
+            },
+            api: {
+              baseUrl: '00791957-59d1-440e-a5f3-b5f3b3e222a9'
+            }
+          }
+        }))
+
+        promise = estimateFee()(dispatchMock, getStateMock);
+      });
+
+      it('returns the custom fee', () => {
+        expect.hasAssertions();
+
+        return promise.then((satoshisPerByte) => {
+          expect(satoshisPerByte).toBe(14);
+        });
+      });
+
+      it('does not call the api', () => {
+        expect(api.estimateFee).toHaveBeenCalledTimes(0);
+      });
+    });
+
+    describe('when the fee level is set to "High"', () => {
+      let promise;
+
+      beforeEach(() => {
+        getStateMock.mockImplementationOnce(() => ({
+          settings: {
+            bitcoin: {
+              fee: {
+                level: 'High',
+                satoshisPerByte: 1
+              }
+            },
+            api: {
+              baseUrl: '1efb49e6-5c13-4fec-8166-854522e71379'
+            }
+          }
+        }))
+
+        promise = estimateFee()(dispatchMock, getStateMock);
+      });
+
+      it('returns a fee that is 150% of the estimated fee', () => {
+        expect.hasAssertions();
+
+        return promise.then((satoshisPerByte) => {
+          const expectedFee = Math.round(123 * 1.5); // 123 comes from the mock at the top.
+          expect(satoshisPerByte).toBe(expectedFee);
+        });
+      });
+    });
+
+    describe('when the fee level is set to "Normal"', () => {
+      let promise;
+
+      beforeEach(() => {
+        getStateMock.mockImplementationOnce(() => ({
+          settings: {
+            bitcoin: {
+              fee: {
+                level: 'Normal',
+                satoshisPerByte: 1
+              }
+            },
+            api: {
+              baseUrl: '5db4836e-c4d6-4456-a795-09e425ec1f13'
+            }
+          }
+        }))
+
+        promise = estimateFee()(dispatchMock, getStateMock);
+      });
+
+      it('returns a fee that is 100% of the estimated fee', () => {
+        expect.hasAssertions();
+
+        return promise.then((satoshisPerByte) => {
+          const expectedFee = 123; // 123 comes from the mock at the top.
+          expect(satoshisPerByte).toBe(expectedFee);
+        });
+      });
+    });
+
+    describe('when the fee level is set to "Low"', () => {
+      let promise;
+
+      beforeEach(() => {
+        getStateMock.mockImplementationOnce(() => ({
+          settings: {
+            bitcoin: {
+              fee: {
+                level: 'Low',
+                satoshisPerByte: 1
+              }
+            },
+            api: {
+              baseUrl: '56464faa-4e3b-46af-8a06-8dac7f2a24bf'
+            }
+          }
+        }))
+
+        promise = estimateFee()(dispatchMock, getStateMock);
+      });
+
+      it('returns a fee that is 50% of the estimated fee', () => {
+        expect.hasAssertions();
+
+        return promise.then((satoshisPerByte) => {
+          const expectedFee = Math.round(123 * 0.5); // 123 comes from the mock at the top.
+          expect(satoshisPerByte).toBe(expectedFee);
+        });
+      });
+    });
+
+    describe('when the fee level is set to "Very low"', () => {
+      let promise;
+
+      beforeEach(() => {
+        getStateMock.mockImplementationOnce(() => ({
+          settings: {
+            bitcoin: {
+              fee: {
+                level: 'Very low',
+                satoshisPerByte: 1
+              }
+            },
+            api: {
+              baseUrl: '376f9ff3-656c-4386-9356-4483fd34925d'
+            }
+          }
+        }))
+
+        promise = estimateFee()(dispatchMock, getStateMock);
+      });
+
+      it('returns a fee that is 25% of the estimated fee', () => {
+        expect.hasAssertions();
+
+        return promise.then((satoshisPerByte) => {
+          const expectedFee = Math.round(123 * 0.25); // 123 comes from the mock at the top.
+          expect(satoshisPerByte).toBe(expectedFee);
         });
       });
     });

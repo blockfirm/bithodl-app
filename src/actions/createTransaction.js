@@ -51,7 +51,7 @@ export const createTransaction = (fromAddress, toAddressHash) => {
         const fee = satoshisPerByte * bytes;
 
         if (fromAddress.amount <= fee) {
-          throw new Error('The estimated fee is larger than the amount to transfer. Please try again later.');
+          throw new Error('The transaction fee is larger than the amount to transfer. Go to Settings and try a lower transaction fee level or try again later.');
         }
 
         // Create a new transaction with the calculated fee.

@@ -30,6 +30,7 @@ export default class SettingsInput extends Component {
           selectionColor='#FFCA8B'
           clearButtonMode='always'
           autoFocus={true}
+          keyboardType={this.props.keyboardType}
           returnKeyType='done'
           onChangeText={this.props.onChangeText}
           onSubmitEditing={this.props.onSubmitEditing}
@@ -42,6 +43,7 @@ export default class SettingsInput extends Component {
 SettingsInput.propTypes = {
   value: PropTypes.string,
   placeholder: PropTypes.string,
+  keyboardType: PropTypes.string,
   onChangeText: PropTypes.func,
   onSubmitEditing: PropTypes.func
 };

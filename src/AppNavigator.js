@@ -23,6 +23,8 @@ import AboutView from './views/settings/AboutView';
 import TermsAndConditionsView from './views/settings/TermsAndConditionsView';
 import ServiceUrlView from './views/settings/ServiceUrlView';
 import BitcoinUnitView from './views/settings/BitcoinUnitView';
+import FeeSettingsView from './views/settings/FeeSettingsView';
+import SatoshisPerByteView from './views/settings/SatoshisPerByteView';
 import ShowRecoveryPhraseView from './views/settings/ShowRecoveryPhraseView';
 
 import DismissableStackNavigator from './DismissableStackNavigator';
@@ -53,6 +55,8 @@ const SettingsCardNavigator = DismissableStackNavigator({
   TermsAndConditions: { screen: TermsAndConditionsView },
   ServiceUrl: { screen: ServiceUrlView },
   BitcoinUnit: { screen: BitcoinUnitView },
+  FeeSettings: { screen: FeeSettingsView },
+  SatoshisPerByte: { screen: SatoshisPerByteView },
   ShowRecoveryPhrase: { screen: ShowRecoveryPhraseView }
 }, {
   headerMode: 'float'

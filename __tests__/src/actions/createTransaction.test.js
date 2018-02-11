@@ -5,6 +5,12 @@ import { createTransaction, CREATE_TRANSACTION_REQUEST, CREATE_TRANSACTION_SUCCE
 const dispatchMock = jest.fn((action) => {
   const getStateMock = jest.fn(() => ({
     settings: {
+      bitcoin: {
+        fee: {
+          level: 'Normal',
+          satoshisPerByte: 100
+        }
+      },
       api: {
         baseUrl: '05f0ca9b-e96d-470a-9c46-04b356d56f79'
       }

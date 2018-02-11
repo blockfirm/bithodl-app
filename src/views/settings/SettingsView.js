@@ -43,6 +43,11 @@ export default class SettingsView extends Component {
     navigation.navigate('BitcoinUnit');
   }
 
+  _showFeeSettings() {
+    const navigation = this.props.navigation;
+    navigation.navigate('FeeSettings');
+  }
+
   _showRecoveryPhrase() {
     const navigation = this.props.navigation;
     navigation.navigate('ShowRecoveryPhrase');
@@ -119,6 +124,7 @@ export default class SettingsView extends Component {
         <SettingsGroup>
           <SettingsLink name='Service URL' value={settings.api.baseUrl} onPress={this._showServiceUrl.bind(this)} />
           <SettingsLink name='Bitcoin display unit' value={settings.bitcoin.unit} onPress={this._showBitcoinUnit.bind(this)} />
+          <SettingsLink name='Transaction fees' value={settings.bitcoin.fee.level} onPress={this._showFeeSettings.bind(this)} />
           <SettingsLink name='Show recovery phrase' onPress={this._showRecoveryPhrase.bind(this)} isLastItem={true} />
         </SettingsGroup>
 

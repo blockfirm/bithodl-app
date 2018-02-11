@@ -32,12 +32,24 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     marginBottom: 5
   },
+  feeLevelWrapper: {
+    position: 'absolute',
+    right: 0,
+    top: 21
+  },
+  feeLevel: {
+    color: '#8F8E94',
+    textAlign: 'right',
+    fontSize: 12
+  },
   feePercentage: {
     color: '#8F8E94'
   }
 });
 
-@connect()
+@connect((state) => ({
+  settings: state.settings
+}))
 export default class ConfirmTransactionView extends Component {
   static navigationOptions = {
     header: null
@@ -86,6 +98,7 @@ export default class ConfirmTransactionView extends Component {
   }
 
   render() {
+    const settings = this.props.settings;
     const { params } = this.props.navigation.state;
     const transaction = params.transaction;
     const input = transaction.inputs[0];
@@ -93,7 +106,7 @@ export default class ConfirmTransactionView extends Component {
     const inputAmount = input.output.satoshis;
     const outputAmount = output.satoshis;
     const feeAmount = inputAmount - outputAmount;
-    const feePercentage = (feeAmount / outputAmount) * 100;
+    const feePercentage = (feeAmount / inputAmount) * 100;
     const toAddress = bitcore.Address.fromScript(output.script, config.bitcoin.network).toString();
 
     return (
@@ -109,7 +122,10 @@ export default class ConfirmTransactionView extends Component {
           </View>
 
           <View style={styles.row}>
-            <StyledText style={styles.label}>Fees</StyledText>
+            <StyledText style={styles.label}>Miner fees</StyledText>
+            <View style={styles.feeLevelWrapper}>
+              <StyledText style={styles.feeLevel}>Level: {settings.bitcoin.fee.level}</StyledText>
+            </View>
             <BtcLabelContainer amount={feeAmount} />
             <StyledText style={styles.feePercentage}>
               ({feePercentage.toPrecision(2)}% of the total amount)
@@ -135,6 +151,7 @@ export default class ConfirmTransactionView extends Component {
 }
 
 ConfirmTransactionView.propTypes = {
+  settings: PropTypes.object,
   dispatch: PropTypes.func,
   navigation: PropTypes.any
 };

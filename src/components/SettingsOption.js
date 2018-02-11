@@ -32,7 +32,7 @@ export default class SettingsOption extends Component {
 
   render() {
     const { name, value, isLastItem } = this.props;
-    const isChecked = value === name;
+    const isChecked = value.toLowerCase() === name.toLowerCase();
 
     const containerStyles = [
       styles.container,

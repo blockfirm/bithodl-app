@@ -18,6 +18,26 @@ describe('config', () => {
         expect(config.bitcoin.network).toBe('livenet');
       });
     });
+
+    describe('.fee', () => {
+      it('is an object', () => {
+        expect(typeof config.bitcoin.fee).toBe('object');
+      });
+
+      describe('.level', () => {
+        it('equals "Normal"', () => {
+          expect(typeof config.bitcoin.fee.level).toBe('string');
+          expect(config.bitcoin.fee.level).toBe('Normal');
+        });
+      });
+
+      describe('.satoshisPerByte', () => {
+        it('equals 100', () => {
+          expect(typeof config.bitcoin.fee.satoshisPerByte).toBe('number');
+          expect(config.bitcoin.fee.satoshisPerByte).toBe(100);
+        });
+      });
+    });
   });
 
   describe('.api', () => {
