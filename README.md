@@ -5,6 +5,10 @@ BitHodl
 [![Build Status](https://img.shields.io/travis/blockfirm/bithodl-app.svg?branch=master&style=flat-square)](https://travis-ci.org/blockfirm/bithodl-app)
 [![Coverage Status](https://img.shields.io/coveralls/blockfirm/bithodl-app.svg?style=flat-square)](https://coveralls.io/r/blockfirm/bithodl-app)
 
+**BitHodl is no longer maintained. You can still use the app to withdraw your funds
+but you can no longer lock any more coins. If you're using BitHodl, please withdraw your
+bitcoins as soon as possible.**
+
 The bitcoin wallet for hodlers. Make sure to hold on to your bitcoins even
 through the most volatile roller coasters. [BitHodl](https://bithodl.com/)
 locks your BTC using pay-to-script hashes, making them impossible to spend

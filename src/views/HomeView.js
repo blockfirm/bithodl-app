@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, TouchableOpacity, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { ifIphoneX } from 'react-native-iphone-x-helper';
 
@@ -48,7 +48,7 @@ export default class HomeView extends Component {
   static navigationOptions = ({ navigation }) => ({
     headerStyle: styles.navigationBar,
     headerRight: (
-      <TouchableOpacity onPress={() => { navigation.navigate('NewAddress'); }}>
+      <TouchableOpacity onPress={() => { Alert.alert('Discontinued', 'BitHodl has been discontinued and you can no longer lock any more coins.'); }}>
         <Icon name='ios-add-circle-outline' style={styles.navigationIcon} />
       </TouchableOpacity>
     ),
@@ -58,6 +58,13 @@ export default class HomeView extends Component {
       </TouchableOpacity>
     )
   });
+
+  componentDidMount() {
+    Alert.alert(
+      'Discontinued',
+      'BitHodl has been discontinued and you can no longer lock any more coins. You are encouraged to withdraw your unlocked funds to another wallet as soon as possible. BitHodl will continue to operate until all users have withdrew their funds or until latest 14th of May 2022.'
+    );
+  }
 
   render() {
     return (
